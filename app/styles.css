@@ -145,6 +145,9 @@ html {
     border-radius: 2vw;
     height: 120vw;
     margin-bottom: 9vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
 }
 
 .fitur1:hover, .fitur2:hover {
@@ -155,11 +158,6 @@ html {
     font-size: 12vw;
     font-weight: 300;
     padding-top: 7vw;
-}
-
-.fitur {
-    opacity: 0;
-    transition: opacity 1s ease-in-out; 
 }
 
 .fitur.in-view {
