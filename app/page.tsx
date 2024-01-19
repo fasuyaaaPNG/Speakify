@@ -24,8 +24,7 @@ export default function Home() {
     fiturSections.forEach(section => {
       observer.observe(section);
     });
-
-    // Cleanup the observer on component unmount
+    
     return () => {
       fiturSections.forEach(section => {
         observer.unobserve(section);
