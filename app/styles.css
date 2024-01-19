@@ -74,3 +74,30 @@
     border-radius: 2vw;
     padding: 1.5vw;
 }
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 160vw;
+    filter: drop-shadow(0 0 3vw rgb(0, 225, 255));
+    animation: arrowAnimate 3s infinite alternate;
+}
+
+@keyframes arrowAnimate {
+    0% {
+        transform: translate(-50%, -50%) translateY(3vw);
+        filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
+        color: rgba(0, 225, 255, 1);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-3vw);
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(3vw);
+        filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
+        color: rgba(0, 225, 255, 1);
+    }
+}
