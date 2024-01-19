@@ -1,0 +1,76 @@
+.logo {
+    width: 82vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 19vw;
+    left: 50%;
+    filter: drop-shadow(0 0 3vw rgb(0, 225, 255));
+    animation: fadeDropShadow 3s infinite alternate;
+}
+
+@keyframes fadeDropShadow {
+    0% {
+        filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
+    }
+    75% {
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+    }
+}
+
+.back1 {
+    background-color: #101010;
+    height: 100vh;
+    text-align: center;
+}
+
+.content1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    padding-bottom: 4vw;
+    font-size: 10vw;
+    font-weight: 500;
+}
+
+.desk {
+    font-size: 3vw;
+    font-weight: 200;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title, .desk {
+    position: relative;
+    bottom: 28vw;
+}
+
+.buttonDownload {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    bottom: 17vw;
+}
+
+.free {
+    margin-right: 10vw;
+    background-color: #101010;
+    border: 0.1vw solid white;
+    font-size: 2.5vw;
+    padding: 3vw;
+    border-radius: 2vw;
+}
+
+.premium {
+    background-color: #101010;
+    border: 0.1vw solid white;
+    font-size: 2.5vw;   
+    border-radius: 2vw;
+    padding: 1.5vw;
+}
