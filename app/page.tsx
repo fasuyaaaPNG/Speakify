@@ -19,10 +19,50 @@ export default function Home() {
           </div>
         </div>
         <div className="arrow">
-          <VscArrowDown size={40}/>
+          <a href="#next">
+            <VscArrowDown size={40}/>
+          </a>
         </div>
       </div>
-      <div className="back2"></div>
+      <div className="back2" id='next'>
+        <div className="content2">
+          <h1 className='Select'>
+            Select version
+          </h1>
+          <p className="ketVersi">
+            choose according to your preferences what you need
+          </p>
+          <div className="fitur fitur1">
+            <p className="judulFitur">
+              Free
+            </p>
+            <p className="isiFitur">
+              ✔️ Voice assistant <br />
+              ✔️ Uses GPT-3.5 Turbo <br />
+              ✖️ Change Japanese voice <br />
+              ✖️ Supports all languages <br />
+              ✖️ Unlimited tokens <br />
+              ✖️ Support maintenance <br />
+              ✖️ Interaction with devices
+            </p>
+          </div>
+          <div className="fitur fitur2">
+            <p className="judulFitur">
+              Premium
+            </p>
+            <p className="isiFitur">
+              ✔️ Voice assistant <br />
+              ✔️ Uses GPT-4 <br />
+              ✔️ Change Japanese voice <br />
+              ✔️ Supports all languages <br />
+              ✔️ Unlimited tokens <br />
+              ✔️ Support maintenance <br />
+              ✔️ Interaction with devices
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
     </div>
   );
 }

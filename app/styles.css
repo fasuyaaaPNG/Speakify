@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .logo {
     width: 82vw;
     position: absolute;
@@ -67,6 +71,12 @@
     border-radius: 2vw;
 }
 
+.free:focus, .premium:focus {
+    filter: drop-shadow(0 0 1vw rgb(0, 225, 255));
+    color: rgb(0, 225, 255);
+    transition: all ease-in 0.2s;
+}
+
 .premium {
     background-color: #101010;
     border: 0.1vw solid white;
@@ -79,7 +89,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 160vw;
+    top: 168vw;
     filter: drop-shadow(0 0 3vw rgb(0, 225, 255));
     animation: arrowAnimate 3s infinite alternate;
 }
@@ -100,4 +110,58 @@
         filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
         color: rgba(0, 225, 255, 1);
     }
+}
+
+.back2 {
+    background-color: #FFFFFF;
+    height: 178vh;
+    text-align: center;
+    color: #4A4A4A;
+    overflow: hidden;
+}
+
+.content2 {
+    padding-top: 15vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Select {
+    font-size: 10vw;
+}
+
+.ketVersi {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4vw;
+    padding-bottom: 8vw;
+    font-size: 4vw;
+}
+
+.fitur {
+    background-color: #F2F2F2;
+    width: 80vw;
+    margin: auto;
+    border-radius: 2vw;
+    height: 120vw;
+    margin-bottom: 9vw;
+}
+
+.fitur1:hover, .fitur2:hover {
+    filter: drop-shadow(0 0 0.7vw rgba(0, 225, 255, 1));
+}
+
+.judulFitur {
+    font-size: 12vw;
+    font-weight: 300;
+    padding-top: 7vw;
+}
+
+.isiFitur {
+    text-align: left;
+    line-height: 12vw;
+    padding-top: 5vw;
+    width: 70vw;
+    margin: auto;
+    font-size: 5vw;
 }
