@@ -157,6 +157,15 @@ html {
     padding-top: 7vw;
 }
 
+.fitur {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+.fitur.in-view {
+    opacity: 1; 
+}
+
 .isiFitur {
     text-align: left;
     line-height: 12vw;

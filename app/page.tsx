@@ -1,8 +1,37 @@
+'use client'
 import './styles.css';
 import { VscArrowDown } from 'react-icons/vsc';
+import React, { useEffect } from 'react';
 
 export default function Home() {
-  const arrowSizeInVw = 3; // Adjust this value as needed
+  useEffect(() => {
+    const fiturSections = document.querySelectorAll('.fitur');
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, options);
+
+    fiturSections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Cleanup the observer on component unmount
+    return () => {
+      fiturSections.forEach(section => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
 
   return (
     <div className="container">
