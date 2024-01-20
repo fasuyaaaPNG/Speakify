@@ -2,7 +2,7 @@
 import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
-import { FaLanguage, FaChartLine, FaWrench} from "react-icons/fa6";
+import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple} from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -254,6 +254,61 @@ export default function Home() {
           >
             <img className='testi' src="/misc/image.svg" alt="" />
           </motion.div>
+          </div>
+        </div>
+        <motion.div
+          className="garis"
+          initial={{ width: '0%', opacity: 0, left: '50%', right: '50%' }}
+          whileInView={{ width: '70%', opacity: 1, left: 0, right: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <hr className='garis' />
+        </motion.div>
+        <div className="content4">
+          <h1 className='Select2'>
+            Download Free Version
+          </h1>
+          <p className="ketVersi">
+            Choose according to the platform you use below
+          </p>
+          <div className="downloadBox">
+            <div className="logoBox">
+              <FaWindows size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+            </div>
+            <p className="judulBox">
+              Windows
+            </p>
+            <div className="button">
+              <button className='downloadButton'>
+                Download <FaDownload/>
+              </button>
+            </div>
+          </div>
+          <div className="downloadBox">
+            <div className="logoBox">
+              <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+            </div>
+            <p className="judulBox">
+              Linux
+            </p>
+            <div className="button">
+              <button className='downloadButton'>
+                Download <FaDownload/>
+              </button>
+            </div>
+          </div>
+          <div className="downloadBox">
+            <div className="logoBox">
+              <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+            </div>
+            <p className="judulBox">
+              Mac OS
+            </p>
+            <div className="button">
+              <button className='downloadButton'>
+                Download <FaDownload/>
+              </button>
+            </div>
           </div>
         </div>
       </div>

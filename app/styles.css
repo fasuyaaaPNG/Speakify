@@ -60,7 +60,7 @@ html {
 
 .title {
     padding-bottom: 4vw;
-    font-size: 10vw;
+    font-size: 6vw;
     font-weight: 500;
 }
 
@@ -148,7 +148,7 @@ html {
 }
 
 .Select {
-    font-size: 10vw;
+    font-size: 6vw;
 }
 
 .ketVersi {
@@ -162,7 +162,7 @@ html {
 
 .fitur {
     background-color: #F2F2F2;
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     border-radius: 2vw;
     height: 110vw;
@@ -177,7 +177,7 @@ html {
 }
 
 .judulFitur {
-    font-size: 10vw;
+    font-size: 6vw;
     font-weight: 300;
     padding-top: 7vw;
 }
@@ -189,10 +189,11 @@ html {
 .isiFitur {
     text-align: left;
     line-height: 10vw;
-    padding-top: 5vw;
+    padding-top: 7vw;
     width: 70vw;
     margin: auto;
     font-size: 3vw;
+    padding-left: 7vw;
 }
 
 .back3 {
@@ -277,4 +278,48 @@ html {
 
 .testi {
     width: 70vw;
+    margin-bottom: 14vw;
+}
+
+.garis {
+    filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 1));
+    margin: auto;
+    border: 1px solid rgba(0, 225, 255, 1);
+  }
+  
+.content4 {
+    padding-top: 15vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.downloadBox {
+    background-color: #222222;
+    width: 70vw;
+    margin: auto;
+    border-radius: 2vw;
+    height: 50vw;
+    margin-bottom: 5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 1s ease-in-out; 
+    text-align: center;
+}
+
+.logoBox {
+    padding-top: 8vw;
+    width: 10vw;
+    margin: auto;
+}
+
+.judulBox {
+    font-size: 6vw;
+}
+
+.downloadButton {
+    font-size: 3vw;
+    border: 1px solid rgba(0, 225, 255, 1);
+    border-radius: 9vw;
+    padding: 2vw;
+    background-color: transparent;
+    width: 30vw;
+    margin-top: 3vw;
 }
