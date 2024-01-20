@@ -137,7 +137,7 @@ html {
     margin-right: auto;
     padding-top: 4vw;
     padding-bottom: 8vw;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .fitur {
@@ -145,7 +145,7 @@ html {
     width: 80vw;
     margin: auto;
     border-radius: 2vw;
-    height: 120vw;
+    height: 110vw;
     margin-bottom: 9vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 0;
@@ -157,7 +157,7 @@ html {
 }
 
 .judulFitur {
-    font-size: 12vw;
+    font-size: 10vw;
     font-weight: 300;
     padding-top: 7vw;
 }
@@ -168,11 +168,11 @@ html {
 
 .isiFitur {
     text-align: left;
-    line-height: 12vw;
+    line-height: 10vw;
     padding-top: 5vw;
     width: 70vw;
     margin: auto;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .back3 {
