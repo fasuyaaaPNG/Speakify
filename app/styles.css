@@ -283,8 +283,9 @@ html {
 }
 
 .garis {
-    filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 1));
+    filter: drop-shadow(0 0 3vw rgba(0, 225, 255, 1));
     margin: auto;
+    border-radius: 90%;
     border: 1px solid rgba(0, 225, 255, 1);
   }
   
@@ -364,7 +365,7 @@ html {
 
 .garis1 {
     margin: auto;
-    border: 1vw solid transparent;
+    border: 4vw solid transparent;
     background-color: #FFFFFF;
 }
 
@@ -377,5 +378,5 @@ html {
 
 .judulContent5 {
     font-size: 6vw;
-    padding-top: 9vw;
+    padding-top: 2vw;
 }

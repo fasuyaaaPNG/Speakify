@@ -307,6 +307,8 @@ export default function Home() {
             initial = {{opacity: 0, scale: 0.9}}
             transition={{ease: 'easeIn', duration: .4}}
             whileInView={{opacity: 1, scale: 1}}
+            whileTap={{scale: 0.9}}
+            whileHover={{scale: 1.1}}
           >
             <div className="downloadBox">
               <div className="logoBox">
@@ -326,6 +328,8 @@ export default function Home() {
             initial = {{opacity: 0, scale: 0.9}}
             transition={{ease: 'easeIn', duration: .4}}
             whileInView={{opacity: 1, scale: 1}}
+            whileTap={{scale: 0.9}}
+            whileHover={{scale: 1.1}}
           >
             <div className="downloadBox">
               <div className="logoBox">
@@ -345,6 +349,8 @@ export default function Home() {
             initial = {{opacity: 0, scale: 0.9}}
             transition={{ease: 'easeIn', duration: .4}}
             whileInView={{opacity: 1, scale: 1}}
+            whileTap={{scale: 0.9}}
+            whileHover={{scale: 1.1}}
           >
             <div className="downloadBox">
               <div className="logoBox">
