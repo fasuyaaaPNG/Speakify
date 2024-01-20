@@ -300,9 +300,14 @@ html {
     border-radius: 2vw;
     height: 50vw;
     margin-bottom: 5vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
     transition: opacity 1s ease-in-out; 
     text-align: center;
+}
+
+.downloadBox:hover {
+    box-shadow: 0 0 4vw rgb(253, 253, 253);
+    transition: all 0.2s ease-in;
 }
 
 .logoBox {
@@ -355,4 +360,22 @@ html {
 
 .atasVisible {
     visibility: visible;
+}
+
+.garis1 {
+    margin: auto;
+    border: 1vw solid transparent;
+    background-color: #FFFFFF;
+}
+
+.back5 {
+    background-color: #ffffff;
+    height: 100vh;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.judulContent5 {
+    font-size: 6vw;
+    padding-top: 9vw;
 }

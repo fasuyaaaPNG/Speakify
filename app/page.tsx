@@ -303,20 +303,30 @@ export default function Home() {
           <p className="ketVersi">
             Choose according to the platform you use below
           </p>
-          <div className="downloadBox">
-            <div className="logoBox">
-              <FaWindows size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+          <motion.div
+            initial = {{opacity: 0, scale: 0.9}}
+            transition={{ease: 'easeIn', duration: .4}}
+            whileInView={{opacity: 1, scale: 1}}
+          >
+            <div className="downloadBox">
+              <div className="logoBox">
+                <FaWindows size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+              </div>
+              <p className="judulBox">
+                Windows
+              </p>
+              <div className="button">
+                <button className='downloadButton'>
+                  Download <FaDownload color='white'/>
+                </button>
+              </div>
             </div>
-            <p className="judulBox">
-              Windows
-            </p>
-            <div className="button">
-              <button className='downloadButton'>
-                Download <FaDownload color='white'/>
-              </button>
-            </div>
-          </div>
-          <section id="downloadSesion">
+          </motion.div>
+          <motion.div
+            initial = {{opacity: 0, scale: 0.9}}
+            transition={{ease: 'easeIn', duration: .4}}
+            whileInView={{opacity: 1, scale: 1}}
+          >
             <div className="downloadBox">
               <div className="logoBox">
                 <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
@@ -330,6 +340,12 @@ export default function Home() {
                 </button>
               </div>
             </div>
+          </motion.div>
+          <motion.div
+            initial = {{opacity: 0, scale: 0.9}}
+            transition={{ease: 'easeIn', duration: .4}}
+            whileInView={{opacity: 1, scale: 1}}
+          >
             <div className="downloadBox">
               <div className="logoBox">
                 <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
@@ -343,7 +359,23 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          </section>
+          </motion.div>
+        </div>
+        <br /><br /><br />
+        <motion.div
+          className="garis1"
+          initial={{ width: '100%', opacity: 0, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
+          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))'}}
+          transition={{ duration: 0.2, ease: 'easeIn' }}
+        >
+          <hr className='garis1' />
+        </motion.div>
+        <div className="back5">
+          <div className="content5">
+            <p className="judulContent5">
+              Development Team
+            </p>
+          </div>
         </div>
       </div>
     </div>
