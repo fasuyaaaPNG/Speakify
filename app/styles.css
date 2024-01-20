@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow: scroll;
+    scrollbar-width: thin;
 }
 
 .logo {
@@ -24,7 +25,7 @@ html {
 
 .back1 {
     background-color: #101010;
-    height: 100vh;
+    height: 101vh;
     text-align: center;
 }
 
@@ -172,4 +173,63 @@ html {
     width: 70vw;
     margin: auto;
     font-size: 5vw;
+}
+
+.back3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.content3 {
+    width: 85vw;
+    margin: auto;
+}
+
+.speakify {
+    filter: drop-shadow(0 0 2vw rgba(0, 225, 255, 1));
+    color: rgb(0, 225, 255);
+    animation: fadeDropShadow 3s infinite alternate;
+}
+
+@keyframes fadeDropShadow2 {
+    0% {
+        filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
+    }
+    75% {
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+    }
+}
+
+.judulContent3 {
+    font-size: 6vw;
+    font-weight: 600;
+    margin-top: 23vw;
+    margin-bottom: 15vw;
+}
+
+.isiContent3 {
+    margin-bottom: 9vw;
+}
+
+.head {
+    display: flex;
+}
+
+.iconContent3 {
+    margin-right: 3vw;
+}
+
+.judulIsiContent3 {
+    font-size: 5vw;
+}
+
+.deskripsiIsiContent3 {
+    text-align: left;
+    padding-top: 4vw;
+    font-size: 3vw;
+}
+
+.debugIcon {
+    color: rgba(0, 225, 255, 1);
 }

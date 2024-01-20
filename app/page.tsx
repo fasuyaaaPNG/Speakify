@@ -1,6 +1,6 @@
 'use client'
 import './styles.css';
-import { VscArrowDown } from 'react-icons/vsc';
+import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
     fiturSections.forEach(section => {
       observer.observe(section);
     });
-    
+
     return () => {
       fiturSections.forEach(section => {
         observer.unobserve(section);
@@ -68,7 +68,7 @@ export default function Home() {
               ✔️ Voice assistant <br />
               ✔️ Uses GPT-3.5 Turbo <br />
               ✖️ Change Japanese voice <br />
-              ✖️ Supports all languages <br />
+              ✔️ Supports all languages <br />
               ✖️ Unlimited tokens <br />
               ✖️ Support maintenance <br />
               ✖️ Interaction with devices
@@ -89,6 +89,108 @@ export default function Home() {
             </p>
           </div>
           <br />
+        </div>
+      </div>
+      <div className="back3">
+        <div className="content3">
+          <p className="judulContent3">
+            Why choose <span className='speakify'>Speakify</span>?
+          </p>
+          <div className="isiContent3">
+            <div className="head">
+              <div className="iconContent3">
+                <span className="debugIcon">
+                  <VscDebug size={25}/>
+                </span>
+              </div>
+              <div className="judulIsiContent3">
+                <p>
+                  Guaranteed security
+                </p>
+              </div>
+            </div>
+            <div className="deskripsiIsiContent3">
+              <p>
+                The program created is safe from viruses because it has been verified as safe for the device
+              </p>
+            </div>            
+          </div>
+          <div className="isiContent3">
+            <div className="head">
+              <div className="iconContent3">
+                <span className="debugIcon">
+                  <VscDashboard size={25}/>
+                </span>
+              </div>
+              <div className="judulIsiContent3">
+                <p>
+                  Guaranteed security
+                </p>
+              </div>
+            </div>
+            <div className="deskripsiIsiContent3">
+              <p>
+                The program created is safe from viruses because it has been verified as safe for the device
+              </p>
+            </div>            
+          </div>
+          <div className="isiContent3">
+            <div className="head">
+              <div className="iconContent3">
+                <span className="debugIcon">
+                  <VscDebug size={25}/>
+                </span>
+              </div>
+              <div className="judulIsiContent3">
+                <p>
+                  Guaranteed security
+                </p>
+              </div>
+            </div>
+            <div className="deskripsiIsiContent3">
+              <p>
+                The program created is safe from viruses because it has been verified as safe for the device
+              </p>
+            </div>            
+          </div>
+          <div className="isiContent3">
+            <div className="head">
+              <div className="iconContent3">
+                <span className="debugIcon">
+                  <VscDebug size={25}/>
+                </span>
+              </div>
+              <div className="judulIsiContent3">
+                <p>
+                  Guaranteed security
+                </p>
+              </div>
+            </div>
+            <div className="deskripsiIsiContent3">
+              <p>
+                The program created is safe from viruses because it has been verified as safe for the device
+              </p>
+            </div>            
+          </div>
+          <div className="isiContent3">
+            <div className="head">
+              <div className="iconContent3">
+                <span className="debugIcon">
+                  <VscDebug size={25}/>
+                </span>
+              </div>
+              <div className="judulIsiContent3">
+                <p>
+                  Guaranteed security
+                </p>
+              </div>
+            </div>
+            <div className="deskripsiIsiContent3">
+              <p>
+                The program created is safe from viruses because it has been verified as safe for the device
+              </p>
+            </div>            
+          </div>
         </div>
       </div>
     </div>
