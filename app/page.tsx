@@ -20,10 +20,6 @@ export default function Home() {
       const scrollThreshold = 50;
       const elemenAtas = document.getElementById("Atas");
     
-      if (scrollPosition >= scrollThreshold) {
-        console.log('Posisi scroll mencapai nilai tertentu:', scrollPosition);
-      }
-    
       if (elemenAtas && scrollPosition >= 120) {
         elemenAtas.classList.add("atasVisible");
       }
@@ -316,7 +312,7 @@ export default function Home() {
             </p>
             <div className="button">
               <button className='downloadButton'>
-                Download <FaDownload/>
+                Download <FaDownload color='white'/>
               </button>
             </div>
           </div>
@@ -330,7 +326,7 @@ export default function Home() {
               </p>
               <div className="button">
                 <button className='downloadButton'>
-                  Download <FaDownload/>
+                  Download <FaDownload color='white'/>
                 </button>
               </div>
             </div>
@@ -343,7 +339,7 @@ export default function Home() {
               </p>
               <div className="button">
                 <button className='downloadButton'>
-                  Download <FaDownload/>
+                  Download <FaDownload color='white'/>
                 </button>
               </div>
             </div>
