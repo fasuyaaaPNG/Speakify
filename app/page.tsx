@@ -3,6 +3,7 @@ import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
 import { FaLanguage, FaChartLine, FaWrench} from "react-icons/fa6";
+import { motion } from 'framer-motion';
 
 export default function Home() {
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function Home() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // Adjust this threshold as needed
+      threshold: 0.5, 
     };
 
     const observer = new IntersectionObserver(entries => {
@@ -61,137 +62,226 @@ export default function Home() {
           <p className="ketVersi">
             Choose according to your preferences what you need
           </p>
-          <div className="fitur fitur1">
-            <p className="judulFitur">
-              Free
-            </p>
-            <p className="isiFitur">
-              ✔️ Voice assistant <br />
-              ✔️ Uses GPT-3.5 Turbo <br />
-              ✖️ Change Japanese voice <br />
-              ✔️ Supports all languages <br />
-              ✖️ Unlimited tokens <br />
-              ✖️ Support maintenance <br />
-              ✖️ Interaction with devices
-            </p>
-          </div>
-          <div className="fitur fitur2">
-            <p className="judulFitur">
-              Premium
-            </p>
-            <p className="isiFitur">
-              ✔️ Voice assistant <br />
-              ✔️ Uses GPT-4 <br />
-              ✔️ Change Japanese voice <br />
-              ✔️ Supports all languages <br />
-              ✔️ Unlimited tokens <br />
-              ✔️ Support maintenance <br />
-              ✔️ Interaction with devices
-            </p>
-          </div>
+          <motion.div
+            transition={{ duration: 0.4}}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div className="fitur fitur1">
+              <p className="judulFitur">
+                Free
+              </p>
+              <p className="isiFitur">
+                ✔️ Voice assistant <br />
+                ✔️ Uses GPT-3.5 Turbo <br />
+                ✖️ Change Japanese voice <br />
+                ✔️ Supports all languages <br />
+                ✖️ Unlimited tokens <br />
+                ✖️ Support maintenance <br />
+                ✖️ Interaction with devices
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            transition={{ duration: 0.4}}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <div className="fitur fitur2">
+              <p className="judulFitur">
+                Premium
+              </p>
+              <p className="isiFitur">
+                ✔️ Voice assistant <br />
+                ✔️ Uses GPT-4 <br />
+                ✔️ Change Japanese voice <br />
+                ✔️ Supports all languages <br />
+                ✔️ Unlimited tokens <br />
+                ✔️ Support maintenance <br />
+                ✔️ Interaction with devices
+              </p>
+            </div>
+          </motion.div>
           <br />
         </div>
       </div>
       <div className="back3">
         <div className="content3">
-          <p className="judulContent3">
-            Why Choose <span className='speakify'>Speakify</span>?
-          </p>
-          <div className="isiContent3">
-            <div className="head">
-              <div className="iconContent3">
-                <span className="debugIcon">
-                  <VscDebug size={23}/>
-                </span>
+          <motion.div
+            initial = {{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{ease: 'easeIn', duration: 0.5}}
+          >
+            <p className="judulContent3">
+              Why Choose <span className='speakify'>Speakify</span>?
+            </p>  
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}  
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 1 }}
+          >
+            <div className="isiContent3">
+              <div className="head">
+              <motion.div
+                initial={{ opacity: 0, x: -120 }} 
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: 'easeIn', duration: 0.5, delay: 1 }}
+              >
+                <div className="iconContent3">
+                  <span className="debugIcon">
+                    <VscDebug size={23}/>
+                  </span>
+                </div>
+              </motion.div>
+                <div className="judulIsiContent3">
+                  <p>
+                    Guaranteed Security
+                  </p>
+                </div>
               </div>
-              <div className="judulIsiContent3">
+              <div className="deskripsiIsiContent3">
                 <p>
-                  Guaranteed Security
+                  Use encryption algorithms to secure sensitive data, both in transit and at rest. This helps protect information from being intercepted or accessed by unauthorized parties
                 </p>
-              </div>
+              </div>            
             </div>
-            <div className="deskripsiIsiContent3">
-              <p>
-                Use encryption algorithms to secure sensitive data, both in transit and at rest. This helps protect information from being intercepted or accessed by unauthorized parties
-              </p>
-            </div>            
-          </div>
-          <div className="isiContent3">
-            <div className="head">
-              <div className="iconContent3">
-                <span className="debugIcon">
-                  <VscDashboard size={23}/>
-                </span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}  
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.2 }}
+          >
+            <div className="isiContent3">
+              <div className="head">
+                <motion.div
+                  initial={{ opacity: 0, x: -120 }} 
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ ease: 'easeIn', duration: 0.5, delay: 1.2 }}
+                >
+                  <div className="iconContent3">
+                    <span className="debugIcon">
+                      <VscDashboard size={23}/>
+                    </span>
+                  </div>
+                </motion.div>
+                <div className="judulIsiContent3">
+                  <p>
+                    Accessibility
+                  </p>
+                </div>
               </div>
-              <div className="judulIsiContent3">
+              <div className="deskripsiIsiContent3">
                 <p>
-                  Accessibility
+                  Voice assistants enhance accessibility for individuals with physical or visual impairments. By using voice commands, users can control devices or access information without the need for manual input
                 </p>
-              </div>
+              </div>            
             </div>
-            <div className="deskripsiIsiContent3">
-              <p>
-                Voice assistants enhance accessibility for individuals with physical or visual impairments. By using voice commands, users can control devices or access information without the need for manual input
-              </p>
-            </div>            
-          </div>
-          <div className="isiContent3">
-            <div className="head">
-              <div className="iconContent3">
-                <span className="debugIcon">
-                  <FaLanguage size={21}/>
-                </span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}  
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.4 }}
+          >
+            <div className="isiContent3">
+              <div className="head">
+                <motion.div
+                    initial={{ opacity: 0, x: -120 }} 
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.4 }}
+                >
+                  <div className="iconContent3">
+                    <span className="debugIcon">
+                      <FaLanguage size={21}/>
+                    </span>
+                  </div>
+                </motion.div>
+                <div className="judulIsiContent3 natural">
+                  <p>
+                    Language Understanding
+                  </p>
+                </div>
               </div>
-              <div className="judulIsiContent3 natural">
+              <div className="deskripsiIsiContent3">
                 <p>
-                  Language Understanding
+                  A quality voice assistant, have superior natural language understanding capabilities. This allows the assistant to better comprehend user intent and provide more relevant responses
                 </p>
-              </div>
+              </div>            
             </div>
-            <div className="deskripsiIsiContent3">
-              <p>
-                A quality voice assistant, have superior natural language understanding capabilities. This allows the assistant to better comprehend user intent and provide more relevant responses
-              </p>
-            </div>            
-          </div>
-          <div className="isiContent3">
-            <div className="head">
-              <div className="iconContent3">
-                <span className="debugIcon">
-                  <FaChartLine size={21} />
-                </span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}  
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.6 }}
+          >
+            <div className="isiContent3">
+              <div className="head">
+                <motion.div
+                    initial={{ opacity: 0, x: -120 }} 
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.6 }}
+                >
+                  <div className="iconContent3">
+                    <span className="debugIcon">
+                      <FaChartLine size={21} />
+                    </span>
+                  </div>
+                </motion.div>
+                <div className="judulIsiContent3">
+                  <p>
+                    Productivity
+                  </p>
+                </div>
               </div>
-              <div className="judulIsiContent3">
+              <div className="deskripsiIsiContent3">
                 <p>
-                  Productivity
+                  Voice assistants contribute to increased productivity by enabling users to perform tasks efficiently and quickly using voice commands. This includes managing schedules, sending messages, or searching for information
                 </p>
-              </div>
+              </div>            
             </div>
-            <div className="deskripsiIsiContent3">
-              <p>
-                Voice assistants contribute to increased productivity by enabling users to perform tasks efficiently and quickly using voice commands. This includes managing schedules, sending messages, or searching for information
-              </p>
-            </div>            
-          </div>
-          <div className="isiContent3">
-            <div className="head">
-              <div className="iconContent3">
-                <span className="debugIcon">
-                  <FaWrench size={21}/>
-                </span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}  
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.8 }}
+          >
+            <div className="isiContent3">
+              <div className="head">
+                <motion.div
+                    initial={{ opacity: 0, x: -120 }} 
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.8 }}
+                >
+                  <div className="iconContent3">
+                    <span className="debugIcon">
+                      <FaWrench size={21}/>
+                    </span>
+                  </div>
+                </motion.div>
+                <div className="judulIsiContent3">
+                  <p>
+                    Update Capabilities
+                  </p>
+                </div>
               </div>
-              <div className="judulIsiContent3">
+              <div className="deskripsiIsiContent3">
                 <p>
-                  Update Capabilities
+                  Choosing a voice assistant platform with active development and regular updates can be advantageous. This ensures ongoing improvements in functionality and the addition of new features
                 </p>
-              </div>
+              </div>            
             </div>
-            <div className="deskripsiIsiContent3">
-              <p>
-                Choosing a voice assistant platform with active development and regular updates can be advantageous. This ensures ongoing improvements in functionality and the addition of new features
-              </p>
-            </div>            
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1}}
+            transition={{ ease: 'easeOut', duration: 0.4, delay: 1.8}}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+          <div className="testiCode">
+            <img className='testi' src="/misc/image.svg" alt="" />
           </div>
+          </motion.div>
         </div>
       </div>
     </div>
