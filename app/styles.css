@@ -178,7 +178,8 @@ html {
 .back3 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    height: 150vh;
+    overflow: hidden;
 }
 
 .content3 {
@@ -205,7 +206,7 @@ html {
     font-size: 6vw;
     font-weight: 600;
     margin-top: 23vw;
-    margin-bottom: 15vw;
+    margin-bottom: 18vw;
 }
 
 .isiContent3 {
@@ -218,10 +219,14 @@ html {
 
 .iconContent3 {
     margin-right: 3vw;
+    display: inline-block;
+    padding-bottom: 0;
 }
 
 .judulIsiContent3 {
     font-size: 5vw;
+    white-space: nowrap;
+    margin-bottom: 0;
 }
 
 .deskripsiIsiContent3 {
@@ -232,4 +237,7 @@ html {
 
 .debugIcon {
     color: rgba(0, 225, 255, 1);
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle; 
 }

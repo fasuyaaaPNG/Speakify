@@ -2,6 +2,7 @@
 import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
+import { FaLanguage, FaChartLine, FaWrench} from "react-icons/fa6";
 
 export default function Home() {
   useEffect(() => {
@@ -55,10 +56,10 @@ export default function Home() {
       <div className="back2" id='next'>
         <div className="content2">
           <h1 className='Select'>
-            Select version
+            Select Version
           </h1>
           <p className="ketVersi">
-            choose according to your preferences what you need
+            Choose according to your preferences what you need
           </p>
           <div className="fitur fitur1">
             <p className="judulFitur">
@@ -94,24 +95,24 @@ export default function Home() {
       <div className="back3">
         <div className="content3">
           <p className="judulContent3">
-            Why choose <span className='speakify'>Speakify</span>?
+            Why Choose <span className='speakify'>Speakify</span>?
           </p>
           <div className="isiContent3">
             <div className="head">
               <div className="iconContent3">
                 <span className="debugIcon">
-                  <VscDebug size={25}/>
+                  <VscDebug size={23}/>
                 </span>
               </div>
               <div className="judulIsiContent3">
                 <p>
-                  Guaranteed security
+                  Guaranteed Security
                 </p>
               </div>
             </div>
             <div className="deskripsiIsiContent3">
               <p>
-                The program created is safe from viruses because it has been verified as safe for the device
+                Use encryption algorithms to secure sensitive data, both in transit and at rest. This helps protect information from being intercepted or accessed by unauthorized parties
               </p>
             </div>            
           </div>
@@ -119,18 +120,18 @@ export default function Home() {
             <div className="head">
               <div className="iconContent3">
                 <span className="debugIcon">
-                  <VscDashboard size={25}/>
+                  <VscDashboard size={23}/>
                 </span>
               </div>
               <div className="judulIsiContent3">
                 <p>
-                  Guaranteed security
+                  Accessibility
                 </p>
               </div>
             </div>
             <div className="deskripsiIsiContent3">
               <p>
-                The program created is safe from viruses because it has been verified as safe for the device
+                Voice assistants enhance accessibility for individuals with physical or visual impairments. By using voice commands, users can control devices or access information without the need for manual input
               </p>
             </div>            
           </div>
@@ -138,18 +139,18 @@ export default function Home() {
             <div className="head">
               <div className="iconContent3">
                 <span className="debugIcon">
-                  <VscDebug size={25}/>
+                  <FaLanguage size={21}/>
                 </span>
               </div>
-              <div className="judulIsiContent3">
+              <div className="judulIsiContent3 natural">
                 <p>
-                  Guaranteed security
+                  Language Understanding
                 </p>
               </div>
             </div>
             <div className="deskripsiIsiContent3">
               <p>
-                The program created is safe from viruses because it has been verified as safe for the device
+                A quality voice assistant, have superior natural language understanding capabilities. This allows the assistant to better comprehend user intent and provide more relevant responses
               </p>
             </div>            
           </div>
@@ -157,18 +158,18 @@ export default function Home() {
             <div className="head">
               <div className="iconContent3">
                 <span className="debugIcon">
-                  <VscDebug size={25}/>
+                  <FaChartLine size={21} />
                 </span>
               </div>
               <div className="judulIsiContent3">
                 <p>
-                  Guaranteed security
+                  Productivity
                 </p>
               </div>
             </div>
             <div className="deskripsiIsiContent3">
               <p>
-                The program created is safe from viruses because it has been verified as safe for the device
+                Voice assistants contribute to increased productivity by enabling users to perform tasks efficiently and quickly using voice commands. This includes managing schedules, sending messages, or searching for information
               </p>
             </div>            
           </div>
@@ -176,18 +177,18 @@ export default function Home() {
             <div className="head">
               <div className="iconContent3">
                 <span className="debugIcon">
-                  <VscDebug size={25}/>
+                  <FaWrench size={21}/>
                 </span>
               </div>
               <div className="judulIsiContent3">
                 <p>
-                  Guaranteed security
+                  Update Capabilities
                 </p>
               </div>
             </div>
             <div className="deskripsiIsiContent3">
               <p>
-                The program created is safe from viruses because it has been verified as safe for the device
+                Choosing a voice assistant platform with active development and regular updates can be advantageous. This ensures ongoing improvements in functionality and the addition of new features
               </p>
             </div>            
           </div>
