@@ -2,17 +2,45 @@
 import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
-import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple} from "react-icons/fa6";
+import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp} from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 export default function Home() {
-  useEffect(() => {
-    const fiturSections = document.querySelectorAll('.fitur');
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const scrollThreshold = 50;
+      const elemenAtas = document.getElementById("Atas");
+    
+      if (scrollPosition >= scrollThreshold) {
+        console.log('Posisi scroll mencapai nilai tertentu:', scrollPosition);
+      }
+    
+      if (elemenAtas && scrollPosition >= 120) {
+        elemenAtas.classList.add("atasVisible");
+      }
+
+      if (elemenAtas && scrollPosition <= 120) {
+        elemenAtas.classList.remove("atasVisible");
+      }
+    };    
+    
+    window.addEventListener('scroll', handleScroll);
+
+    // Kode untuk IntersectionObserver
+    const fiturSections = document.querySelectorAll('.fitur');
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, 
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(entries => {
@@ -32,11 +60,17 @@ export default function Home() {
         observer.unobserve(section);
       });
     };
-  }, []);
+
+  }, []); // Perhatikan perubahan pada dependencies array, sekarang kosong karena Anda hanya ingin ini dijalankan sekali pada mounting.
 
   return (
     <div className="container">
-      <div className="back1">
+      <div id="Atas" className="atas">
+        <a href="#landing" className='atasIcon' onClick={handleScrollToTop}>
+          <FaAnglesUp size={25} color='black'/>
+        </a>
+      </div>
+      <div className="back1" id="#landing">
         <div className="content1">
           <img className="logo" src="/logo/speakify.svg" alt="" />
           <p className="title">
@@ -46,7 +80,9 @@ export default function Home() {
             Speakify is an artificial intelligence <span className='tanda'>(AI Voice)</span> that is capable of producing a natural voice according to the commands given by the user.
           </p>
           <div className="buttonDownload">
-            <button className="free">DOWNLOAD FOR FREE</button>
+            <a className='free'>
+              DOWNLOAD FOR FREE
+            </a>
             <button className="premium">DOWNLOAD FOR PREMIUM</button>
           </div>
         </div>
@@ -284,32 +320,34 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="downloadBox">
-            <div className="logoBox">
-              <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+          <section id="downloadSesion">
+            <div className="downloadBox">
+              <div className="logoBox">
+                <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+              </div>
+              <p className="judulBox">
+                Linux
+              </p>
+              <div className="button">
+                <button className='downloadButton'>
+                  Download <FaDownload/>
+                </button>
+              </div>
             </div>
-            <p className="judulBox">
-              Linux
-            </p>
-            <div className="button">
-              <button className='downloadButton'>
-                Download <FaDownload/>
-              </button>
+            <div className="downloadBox">
+              <div className="logoBox">
+                <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+              </div>
+              <p className="judulBox">
+                Mac OS
+              </p>
+              <div className="button">
+                <button className='downloadButton'>
+                  Download <FaDownload/>
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="downloadBox">
-            <div className="logoBox">
-              <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
-            </div>
-            <p className="judulBox">
-              Mac OS
-            </p>
-            <div className="button">
-              <button className='downloadButton'>
-                Download <FaDownload/>
-              </button>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
