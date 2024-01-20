@@ -14,12 +14,32 @@ html {
     animation: fadeDropShadow 3s infinite alternate;
 }
 
+.tanda {
+    animation: fadeColorDropShadow 3s infinite alternate;
+}
+
 @keyframes fadeDropShadow {
     0% {
         filter: drop-shadow(0 0 5vw rgba(0, 225, 255, 1));
     }
     75% {
         filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+    }
+}
+
+@keyframes fadeColorDropShadow {
+    0% {
+
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 1));
+        color: rgba(0, 225, 255, 1);
+    }
+    50% {
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 1));
+        color: rgba(0, 225, 255, 1);
     }
 }
 
@@ -240,6 +260,7 @@ html {
     align-items: center;
     display: inline-block;
     vertical-align: middle; 
+    height: 5vw;
 }
 
 .testiCode {

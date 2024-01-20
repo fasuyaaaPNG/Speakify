@@ -39,9 +39,11 @@ export default function Home() {
       <div className="back1">
         <div className="content1">
           <img className="logo" src="/logo/speakify.svg" alt="" />
-          <p className="title">SPEAKIFY</p>
+          <p className="title">
+            SPEAKIFY
+          </p>
           <p className="desk">
-            Speakify is an artificial intelligence (AI Voice) that is capable of producing a natural voice according to the commands given by the user.
+            Speakify is an artificial intelligence <span className='tanda'>(AI Voice)</span> that is capable of producing a natural voice according to the commands given by the user.
           </p>
           <div className="buttonDownload">
             <button className="free">DOWNLOAD FOR FREE</button>
@@ -109,6 +111,7 @@ export default function Home() {
         <div className="content3">
           <motion.div
             initial = {{opacity: 0}}
+            animate={{ opacity: 1, x: 0 }}
             whileInView={{opacity: 1}}
             transition={{ease: 'easeIn', duration: 0.5}}
           >
@@ -119,21 +122,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: 100 }}  
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: 'easeIn', duration: 0.5, delay: 1 }}
+            transition={{ ease: 'easeIn', duration: 0.5 }}
           >
             <div className="isiContent3">
               <div className="head">
-              <motion.div
-                initial={{ opacity: 0, x: -120 }} 
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: 'easeIn', duration: 0.5, delay: 1 }}
-              >
                 <div className="iconContent3">
                   <span className="debugIcon">
                     <VscDebug size={23}/>
                   </span>
                 </div>
-              </motion.div>
                 <div className="judulIsiContent3">
                   <p>
                     Guaranteed Security
@@ -148,23 +145,17 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}  
+            initial={{ opacity: 0, x: -100 }}  
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.2 }}
+            transition={{ ease: 'easeIn', duration: 0.5}}
           >
             <div className="isiContent3">
               <div className="head">
-                <motion.div
-                  initial={{ opacity: 0, x: -120 }} 
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ ease: 'easeIn', duration: 0.5, delay: 1.2 }}
-                >
                   <div className="iconContent3">
                     <span className="debugIcon">
                       <VscDashboard size={23}/>
                     </span>
                   </div>
-                </motion.div>
                 <div className="judulIsiContent3">
                   <p>
                     Accessibility
@@ -181,21 +172,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: 100 }}  
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.4 }}
+            transition={{ ease: 'easeIn', duration: 0.5}}
           >
             <div className="isiContent3">
               <div className="head">
-                <motion.div
-                    initial={{ opacity: 0, x: -120 }} 
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.4 }}
-                >
                   <div className="iconContent3">
                     <span className="debugIcon">
                       <FaLanguage size={21}/>
                     </span>
                   </div>
-                </motion.div>
                 <div className="judulIsiContent3 natural">
                   <p>
                     Language Understanding
@@ -210,23 +195,17 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}  
+            initial={{ opacity: 0, x: -100 }}  
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.6 }}
+            transition={{ ease: 'easeIn', duration: 0.5}}
           >
             <div className="isiContent3">
               <div className="head">
-                <motion.div
-                    initial={{ opacity: 0, x: -120 }} 
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.6 }}
-                >
                   <div className="iconContent3">
                     <span className="debugIcon">
                       <FaChartLine size={21} />
                     </span>
                   </div>
-                </motion.div>
                 <div className="judulIsiContent3">
                   <p>
                     Productivity
@@ -243,21 +222,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: 100 }}  
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: 'easeIn', duration: 0.5, delay: 1.8 }}
+            transition={{ ease: 'easeIn', duration: 0.5}}
           >
             <div className="isiContent3">
               <div className="head">
-                <motion.div
-                    initial={{ opacity: 0, x: -120 }} 
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ ease: 'easeIn', duration: 0.5, delay: 1.8 }}
-                >
                   <div className="iconContent3">
                     <span className="debugIcon">
                       <FaWrench size={21}/>
                     </span>
                   </div>
-                </motion.div>
                 <div className="judulIsiContent3">
                   <p>
                     Update Capabilities
@@ -271,17 +244,17 @@ export default function Home() {
               </div>            
             </div>
           </motion.div>
+          <div className="testiCode">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1}}
-            transition={{ ease: 'easeOut', duration: 0.4, delay: 1.8}}
-            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1}}
+            transition={{ ease: 'easeIn', duration: 0.4}}
+            whileHover={{ scale: 1.1}}
             whileTap={{ scale: 0.9 }}
           >
-          <div className="testiCode">
             <img className='testi' src="/misc/image.svg" alt="" />
-          </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </div>
