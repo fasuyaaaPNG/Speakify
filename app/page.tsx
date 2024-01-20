@@ -76,7 +76,7 @@ export default function Home() {
             Speakify is an artificial intelligence <span className='tanda'>(AI Voice)</span> that is capable of producing a natural voice according to the commands given by the user.
           </p>
           <div className="buttonDownload">
-            <a className='free'>
+            <a className='free' href='#download'>
               DOWNLOAD FOR FREE
             </a>
             <button className="premium">DOWNLOAD FOR PREMIUM</button>
@@ -296,7 +296,7 @@ export default function Home() {
         >
           <hr className='garis' />
         </motion.div>
-        <div className="content4">
+        <div className="content4" id='download'>
           <h1 className='Select2'>
             Download Free Version
           </h1>
