@@ -1,13 +1,62 @@
 'use client'
 import './styles.css';
-import Link from "next/link";
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp, FaGithub, FaInstagram, FaLinkedinIn, FaYoutube, FaCaretRight, FaCaretLeft} from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 export default function Home() {
 
+  const [transformX, setTransformX] = React.useState(25);
+  const [count, setCount] = React.useState(0);
+  
+  const handleButtonClickKanan = () => {
+    setTransformX((prevTransformX) => prevTransformX - 180);
+    setCount((prevCount) => prevCount + 1);
+    console.log(count);
+  
+    const elemenButtonKanan = document.getElementById("kanan");
+    const elemenButtonKiri = document.getElementById("kiri");
+  
+    if (elemenButtonKiri && count === 0) {
+      elemenButtonKiri.classList.remove("ilang");
+      elemenButtonKiri.classList.add("ada");
+    }
+  
+    if (elemenButtonKanan && count === 2) {
+      elemenButtonKanan.classList.add("ilang");
+      elemenButtonKanan.classList.remove("ada");
+    }
+  
+    if (elemenButtonKanan && count === 1) {
+      elemenButtonKanan.classList.add("ada");
+      elemenButtonKanan.classList.remove("ilang");
+    }
+  };
+  
+  const handleButtonClickKiri = () => {
+    setTransformX((prevTransformX) => prevTransformX + 180);
+    setCount((prevCount) => prevCount - 1);
+    console.log(count);
+  
+    const elemenButtonKanan = document.getElementById("kanan");
+    const elemenButtonKiri = document.getElementById("kiri");
+  
+    if (elemenButtonKiri && count === 1) {
+      elemenButtonKiri.classList.add("ilang");
+      elemenButtonKiri.classList.remove("ada");
+    }
+  
+    if (elemenButtonKanan && count === 2) {
+      elemenButtonKanan.classList.remove("ilang");
+      elemenButtonKanan.classList.add("ada");
+    }
+  
+    if (elemenButtonKanan && count === 3) {
+      elemenButtonKanan.classList.add("ada");
+    }
+  };
+    
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -18,7 +67,6 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const scrollThreshold = 50;
       const elemenAtas = document.getElementById("Atas");
     
       if (elemenAtas && scrollPosition >= 120) {
@@ -393,6 +441,168 @@ export default function Home() {
             <p className="ketContent5">
               The following contributed to this project
             </p>
+            <motion.div
+              animate={{transform: `translateX(${transformX}vw)`}}
+            >
+              <div className="profilCard">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
+                  transition={{ ease: 'easeIn', duration: 0.7 }}
+                >
+                  <div className="Card">
+                    <div className="profil">
+                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                    </div>
+                    <p className="nama">
+                      1Dhavin Fasya A.
+                    </p>
+                    <p className="job">
+                      Software Development
+                    </p>
+                    <div className="IconCard">
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaGithub/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaInstagram/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaYoutube/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaLinkedinIn/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
+                  transition={{ ease: 'easeIn', duration: 0.7 }}
+                >
+                  <div className="Card">
+                    <div className="profil">
+                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                    </div>
+                    <p className="nama">
+                     2Dhavin Fasya A.
+                    </p>
+                    <p className="job">
+                      Software Development
+                    </p>
+                    <div className="IconCard">
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaGithub/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaInstagram/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaYoutube/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaLinkedinIn/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
+                  transition={{ ease: 'easeIn', duration: 0.7 }}
+                >
+                  <div className="Card">
+                    <div className="profil">
+                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                    </div>
+                    <p className="nama">
+                      3Dhavin Fasya A.
+                    </p>
+                    <p className="job">
+                      Software Development
+                    </p>
+                    <div className="IconCard">
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaGithub/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaInstagram/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaYoutube/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaLinkedinIn/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
+                  transition={{ ease: 'easeIn', duration: 0.7 }}
+                >
+                  <div className="Card">
+                    <div className="profil">
+                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                    </div>
+                    <p className="nama">
+                      4Dhavin Fasya A.
+                    </p>
+                    <p className="job">
+                      Software Development
+                    </p>
+                    <div className="IconCard">
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaGithub/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaInstagram/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaYoutube/>
+                        </a>
+                      </div>
+                      <div className="iconCard">
+                        <a href="" className="iconLink">
+                          <FaLinkedinIn/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </motion.div>
             <div className="btn">
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
@@ -400,7 +610,7 @@ export default function Home() {
                 transition={{ ease: 'easeIn', duration: 0.5 }}
               >
                 <div className="btnLeft">
-                  <button className="left"> 
+                  <button className="left" id='kiri' onClick={handleButtonClickKiri}> 
                     <FaCaretLeft color='rgb(0, 96, 109)' size={45} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1))'/>
                   </button>
                 </div>
@@ -411,53 +621,12 @@ export default function Home() {
                 transition={{ ease: 'easeIn', duration: 0.5 }}
               >
                 <div className="btnRight">
-                  <button className="right">
+                  <button className="right" id='kanan' onClick={handleButtonClickKanan}>
                     <FaCaretRight color='rgb(0, 96, 109)' size={45} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1))'/>
                   </button>
                 </div>
               </motion.div>
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
-              transition={{ ease: 'easeIn', duration: 0.7 }}
-            >
-              <div className="profilCard">
-                <div className="Card">
-                  <div className="profil">
-                    <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
-                  </div>
-                  <p className="nama">
-                    Dhavin Fasya A.
-                  </p>
-                  <p className="job">
-                    Software Development
-                  </p>
-                  <div className="IconCard">
-                    <div className="iconCard">
-                      <a href="" className="iconLink">
-                        <FaGithub/>
-                      </a>
-                    </div>
-                    <div className="iconCard">
-                      <a href="" className="iconLink">
-                        <FaInstagram/>
-                      </a>
-                    </div>
-                    <div className="iconCard">
-                      <a href="" className="iconLink">
-                        <FaYoutube/>
-                      </a>
-                    </div>
-                    <div className="iconCard">
-                      <a href="" className="iconLink">
-                        <FaLinkedinIn/>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>

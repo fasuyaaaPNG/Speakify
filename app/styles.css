@@ -404,13 +404,17 @@ html {
 
 .profilCard {
     padding-top: 7vw;
+    display: flex;
+    width: 590vw;
+    justify-content: space-between;
 }
 
 .Card {
     border: 0.5vw solid rgb(0, 96, 109);
     padding: 4vw;
     width: 50vw;
-    margin: auto;
+    margin-right: 0vw;
+    margin-left: 0vw;
     border-radius: 6vw;
 }
  
@@ -449,7 +453,7 @@ html {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    margin-top: 35vw;
+    margin-top: -30vw;
     display: flex;
     justify-content: space-between;
     width: 85vw;
@@ -458,4 +462,16 @@ html {
 .left, .right {
     background-color: transparent;
     border: none;
+}
+
+.left {
+    visibility: hidden;
+}
+
+.ilang{
+    visibility: hidden;
+}
+
+.ada {
+    visibility: visible;
 }
