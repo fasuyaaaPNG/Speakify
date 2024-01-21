@@ -1,8 +1,9 @@
 'use client'
 import './styles.css';
+import Link from "next/link";
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect } from 'react';
-import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp} from "react-icons/fa6";
+import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp, FaGithub, FaInstagram, FaLinkedinIn, FaYoutube, FaCaretRight, FaCaretLeft} from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -139,6 +140,14 @@ export default function Home() {
           <br />
         </div>
       </div>
+      <motion.div
+          className="garisAtas"
+          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
+          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 2vw 6vw rgba(255, 255, 255, 1))'}}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
+        >
+          <hr className='garisAtas' />
+        </motion.div>
       <div className="back3">
         <div className="content3">
           <motion.div
@@ -370,9 +379,9 @@ export default function Home() {
         <br /><br /><br />
         <motion.div
           className="garis1"
-          initial={{ width: '100%', opacity: 0, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
+          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
           whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))'}}
-          transition={{ duration: 0.2, ease: 'easeIn' }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
         >
           <hr className='garis1' />
         </motion.div>
@@ -381,6 +390,74 @@ export default function Home() {
             <p className="judulContent5">
               Development Team
             </p>
+            <p className="ketContent5">
+              The following contributed to this project
+            </p>
+            <div className="btn">
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0}}
+                transition={{ ease: 'easeIn', duration: 0.5 }}
+              >
+                <div className="btnLeft">
+                  <button className="left"> 
+                    <FaCaretLeft color='rgb(0, 96, 109)' size={45} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1))'/>
+                  </button>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0}}
+                transition={{ ease: 'easeIn', duration: 0.5 }}
+              >
+                <div className="btnRight">
+                  <button className="right">
+                    <FaCaretRight color='rgb(0, 96, 109)' size={45} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1))'/>
+                  </button>
+                </div>
+              </motion.div>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: [0.8, 1.1, 1] }}
+              transition={{ ease: 'easeIn', duration: 0.7 }}
+            >
+              <div className="profilCard">
+                <div className="Card">
+                  <div className="profil">
+                    <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                  </div>
+                  <p className="nama">
+                    Dhavin Fasya A.
+                  </p>
+                  <p className="job">
+                    Software Development
+                  </p>
+                  <div className="IconCard">
+                    <div className="iconCard">
+                      <a href="" className="iconLink">
+                        <FaGithub/>
+                      </a>
+                    </div>
+                    <div className="iconCard">
+                      <a href="" className="iconLink">
+                        <FaInstagram/>
+                      </a>
+                    </div>
+                    <div className="iconCard">
+                      <a href="" className="iconLink">
+                        <FaYoutube/>
+                      </a>
+                    </div>
+                    <div className="iconCard">
+                      <a href="" className="iconLink">
+                        <FaLinkedinIn/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>

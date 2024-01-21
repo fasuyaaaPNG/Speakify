@@ -4,6 +4,10 @@ html {
     scrollbar-width: thin;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .logo {
     width: 82vw;
     position: absolute;
@@ -141,6 +145,14 @@ html {
     text-align: center;
     color: #4A4A4A;
     overflow: hidden;
+}
+
+.garisAtas {
+    margin: auto;
+    border: 4vw solid transparent;
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 15vw;
+    border-bottom-left-radius: 15vw;
 }
 
 .content2 {
@@ -345,7 +357,6 @@ html {
     border-radius: 50%;
     width: 12vw;
     height: 12vw;
-    padding: 1vw;
     background-color: #F2F2F2;
     border: 1px solid rgba(0, 225, 255, 1);
     filter: drop-shadow(0 0 1vw rgb(0, 110, 124));
@@ -356,6 +367,7 @@ html {
     left: 80vw;
     top: 90vh;
     z-index: 8;
+    padding-top: 1vw;
     visibility: hidden;
 }
 
@@ -367,6 +379,8 @@ html {
     margin: auto;
     border: 4vw solid transparent;
     background-color: #FFFFFF;
+    border-top-right-radius: 15vw;
+    border-top-left-radius: 15vw;
 }
 
 .back5 {
@@ -378,5 +392,70 @@ html {
 
 .judulContent5 {
     font-size: 6vw;
+    font-weight: 600;
     padding-top: 2vw;
+    color: #4A4A4A;
+    padding-bottom: 4vw;
+}
+
+.ketContent5 {
+    font-size: 3vw;
+}
+
+.profilCard {
+    padding-top: 7vw;
+}
+
+.Card {
+    border: 0.5vw solid rgb(0, 96, 109);
+    padding: 4vw;
+    width: 50vw;
+    margin: auto;
+    border-radius: 6vw;
+}
+ 
+.profilImage {
+    width: 20vw;
+    border: 0.5vw solid rgb(0, 96, 109);
+    padding: 0.5vw;
+    border-radius: 70%;
+    margin-bottom: 2vw;
+}
+
+.nama {
+    font-size: 3vw;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.job {
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: rgb(0, 96, 109);
+    margin-bottom: 6vw;
+}
+
+.IconCard {
+    display: flex;
+    justify-content: center;
+}
+
+.iconCard {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-top: 35vw;
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+}
+
+.left, .right {
+    background-color: transparent;
+    border: none;
 }
