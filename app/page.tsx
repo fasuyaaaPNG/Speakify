@@ -2,7 +2,7 @@
 import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect, useState } from 'react';
-import { FaLanguage, FaChartLine, FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp, FaGithub, FaInstagram, FaLinkedinIn, FaYoutube, FaCaretRight, FaCaretLeft} from "react-icons/fa6";
+import { FaLanguage, FaChartLine, FaSteam, FaTwitter,FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp, FaGithub, FaInstagram, FaLinkedinIn, FaYoutube, FaTiktok, FaCaretRight, FaCaretLeft} from "react-icons/fa6";
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -190,9 +190,9 @@ export default function Home() {
       </div>
       <motion.div
           className="garisAtas"
-          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
-          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 2vw 6vw rgba(255, 255, 255, 1))'}}
-          transition={{ duration: 0.2, ease: 'easeInOut' }}
+          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))', borderRadius: '0 0 0 0'}}
+          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 2vw 6vw rgba(255, 255, 255, 1))', borderRadius: '0 0 15vw 15vw'}}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <hr className='garisAtas' />
         </motion.div>
@@ -427,9 +427,9 @@ export default function Home() {
         <br /><br /><br />
         <motion.div
           className="garis1"
-          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))'}}
-          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))'}}
-          transition={{ duration: 0.2, ease: 'easeInOut' }}
+          initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))', borderRadius: '0 0 0 0'}}
+          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))', borderRadius: '15vw 15vw 0 0'}}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <hr className='garis1' />
         </motion.div>
@@ -455,31 +455,47 @@ export default function Home() {
                       <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
                     </div>
                     <p className="nama">
-                      1Dhavin Fasya A.
+                      Dhavin Fasya A.
                     </p>
                     <p className="job">
                       Software Development
                     </p>
                     <div className="IconCard">
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaGithub/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://github.com/fasuyaaaPNG" className="iconLink">
+                            <FaGithub/>
+                          </a>
+                        </motion.div>
                       </div>
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaInstagram/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.instagram.com/vinfasss" className="iconLink">
+                            <FaInstagram/>
+                          </a>
+                        </motion.div>
                       </div>
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaYoutube/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://twitter.com/fasuyaaa" className="iconLink">
+                            <FaTwitter/>
+                          </a>
+                        </motion.div>
                       </div>
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaLinkedinIn/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://steamcommunity.com/profiles/76561199494600447/" className="iconLink">
+                            <FaSteam/>
+                          </a>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -491,34 +507,32 @@ export default function Home() {
                 >
                   <div className="Card">
                     <div className="profil">
-                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                      <img src="/profil/dhira.jpeg" alt="" className="profilImage" />
                     </div>
                     <p className="nama">
-                     2Dhavin Fasya A.
+                     Dhira Faizah Syavitri
                     </p>
                     <p className="job">
-                      Software Development
+                      Maintenance Engineer
                     </p>
                     <div className="IconCard">
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaGithub/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.tiktok.com/@dhirasyv?_t=8jEPncp9htR&_r=1" className="iconLink">
+                            <FaTiktok/>
+                          </a>
+                        </motion.div>
                       </div>
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaInstagram/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaYoutube/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaLinkedinIn/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.instagram.com/dhirasyv?igsh=dWkxcW1wcTJ3Zjd3" className="iconLink">
+                            <FaInstagram/>
+                          </a>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -530,34 +544,32 @@ export default function Home() {
                 >
                   <div className="Card">
                     <div className="profil">
-                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                      <img src="/profil/nydia.jpg" alt="" className="profilImage" />
                     </div>
                     <p className="nama">
-                      3Dhavin Fasya A.
+                      Nydia Havina
                     </p>
                     <p className="job">
-                      Software Development
+                      Assets Designer
                     </p>
                     <div className="IconCard">
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaGithub/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.tiktok.com/@akudianydia?_t=8jEpCw9OsTa&_r=1" className="iconLink">
+                            <FaTiktok/>
+                          </a>
+                        </motion.div>
                       </div>
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaInstagram/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaYoutube/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaLinkedinIn/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.instagram.com/nydhvn?igsh=am96bGQ0ZXRtNTh6" className="iconLink">
+                            <FaInstagram/>
+                          </a>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -569,34 +581,23 @@ export default function Home() {
                 >
                   <div className="Card">
                     <div className="profil">
-                      <img src="/profil/dhavin.jpeg" alt="" className="profilImage" />
+                      <img src="/profil/rafif.jpeg" alt="" className="profilImage" />
                     </div>
                     <p className="nama">
-                      4Dhavin Fasya A.
+                      M. Rafif Putra Perdana
                     </p>
                     <p className="job">
-                      Software Development
+                      DevOps Engineer
                     </p>
                     <div className="IconCard">
                       <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaGithub/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaInstagram/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaYoutube/>
-                        </a>
-                      </div>
-                      <div className="iconCard">
-                        <a href="" className="iconLink">
-                          <FaLinkedinIn/>
-                        </a>
+                        <motion.div
+                          whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
+                        >
+                          <a href="https://www.instagram.com/mz.rafiff/" className="iconLink">
+                            <FaInstagram/>
+                          </a>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -628,6 +629,10 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
+        </div>
+        {/* end back 5 */}
+        <div className="back6">
+          <div className="content6"></div>
         </div>
       </div>
     </div>
