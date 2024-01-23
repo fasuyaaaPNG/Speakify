@@ -385,7 +385,7 @@ html {
 
 .back5 {
     background-color: #ffffff;
-    height: 100vh;
+    height: 65vh;
     text-align: center;
     color: #4A4A4A;
 }
@@ -476,4 +476,54 @@ html {
 
 .ada {
     visibility: visible;
+}
+
+.judulContent6 {
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+.content6 {
+    margin-top: 15vw;
+}
+
+.sectionFaq {
+    margin-top: 10vw;
+    padding: 3vw;
+}
+
+.deskContent6 {
+    font-size: 3vw;
+    margin-top: 4vw;
+}
+
+.boxFaq {
+    border: 0.5vw solid rgba(0, 225, 255, 1);
+    border-radius: 2vw;
+    display: flex;
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+    padding: 2vw;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jawabanBoxFaq {
+    font-size: 3vw;
+    text-align: left;
+    filter: drop-shadow(0 0 0.2vw rgb(255, 255, 255));
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    white-space: normal;
+}
+
+.hilang {
+    display: none;
+}
+
+.aktif {
+    display: block;
 }
