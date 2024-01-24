@@ -676,8 +676,8 @@ export default function Home() {
               <motion.div
                 className="boxFaq"
                 onTap={handleTap1}
-                animate={{ filter: isOpen1 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen1 ? 0.9 : 1}}
-                transition={{ease: 'easeIn', duration: '0.2'}}
+                animate={{ filter: isOpen1 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen1 ? [0.9, 1] : [1,0.9,1]}}
+                transition={{ease: 'easeIn', duration: '0.3'}}
               >
                 <p className="judulBoxFaq">
                   What is Speakify?
@@ -697,8 +697,8 @@ export default function Home() {
               <motion.div
                 className="boxFaq"
                 onTap={handleTap2}
-                animate={{ filter: isOpen2 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen2 ? 0.9 : 1}}
-                transition={{ease: 'easeIn', duration: '0.2'}}
+                animate={{ filter: isOpen2 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen2 ? [0.9, 1] : [1,0.9,1]}}
+                transition={{ease: 'easeIn', duration: '0.3'}}
               >
                 <p className="judulBoxFaq">
                   What was the purpose of Speakify created?
@@ -728,8 +728,8 @@ export default function Home() {
               <motion.div
                 className="boxFaq"
                 onTap={handleTap3}
-                animate={{ filter: isOpen3 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen3 ? 0.9 : 1}}
-                transition={{ease: 'easeIn', duration: '0.2'}}
+                animate={{ filter: isOpen3 ? 'drop-shadow(0 0 1vw rgb(0, 225, 255))' : 'drop-shadow(0 0 0vw rgb(0, 225, 255))', scale: isOpen3 ? [0.9, 1] : [1,0.9,1]}}
+                transition={{ease: 'easeIn', duration: '0.3'}}
               >
                 <p className="judulBoxFaq">
                   How to install Speakify?
@@ -744,12 +744,31 @@ export default function Home() {
               </motion.div>
               <div className={isOpenJ3 ? 'boxFaqJawaban aktif' : 'boxFaqJawaban hilang'}>
                 <p className="jawabanBoxFaq">
-                1. Press "DOWNLOAD FOR FREE" on the website <span>speakify</span><br /><br />
-                2. Choose according to the platform you use <br /><br />
-                3. Extract the downloaded file <br /><br />
-                4. Read the README.txt file because each platform has different setup methods
+                  1. Press "DOWNLOAD FOR FREE" on the website <span>speakify</span><br /><br />
+                  2. Choose according to the platform you use <br /><br />
+                  3. Extract the downloaded file <br /><br />
+                  4. Read the README.txt file because each platform has different setup methods
                 </p>
               </div>
+            </div>
+            <div className="footer">
+              <motion.div
+                className='footerImage'
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1, filter: 'drop-shadow(0 0 0.9vw rgb(255, 255, 255))'}}
+              >
+                <img src="/logo/speakify.svg" className='imageFooter' alt="" />
+              </motion.div>
+              <motion.div
+                className='copy'
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{ease: 'easeIn', delay: 1}}
+              >
+                <p>
+                  &copy; Copyrigt Speakify 2023
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>

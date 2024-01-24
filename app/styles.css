@@ -490,6 +490,9 @@ html {
 .sectionFaq {
     margin-top: 10vw;
     padding: 3vw;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .deskContent6 {
@@ -501,8 +504,8 @@ html {
     border: 0.5vw solid rgba(0, 225, 255, 1);
     border-radius: 2vw;
     display: flex;
-    margin-bottom: 2vw;
-    font-size: 3.5vw;
+    margin-bottom: 4vw;
+    font-size: 3.3vw;
     padding: 2vw;
     flex-wrap: wrap;
     text-align: left;
@@ -526,4 +529,20 @@ html {
 
 .aktif {
     display: block;
+}
+
+.footer {
+    margin-top: 7vw;
+    display: flex;
+    align-items: center;
+}
+
+.imageFooter {
+    width: 20vw;
+    float: left;
+}
+
+.copy {
+    margin-left:17vw;
+    font-size: 2vw;
 }
