@@ -264,7 +264,7 @@ html {
 }
 
 .deskripsiIsiContent3 {
-    text-align: left;
+    text-align: justify;
     padding-top: 4vw;
     font-size: 3vw;
 }
@@ -545,4 +545,70 @@ html {
 .copy {
     margin-left:17vw;
     font-size: 2vw;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+
+    .title {
+        position: relative;
+        top: -9vw;
+        font-size: 3vw;
+        text-align: left;
+        left: 20vw;
+    }
+
+    .desk {
+        position: relative;
+        top: -12vw;
+        text-align: left;
+        font-size: 1.7vw;
+        width: 45vw;
+        left: 20vw;
+    }
+
+    .logo {
+        width: 55vw;
+        top: 1vw;
+        left: 0vw;
+        filter: drop-shadow(0 0 1vw rgb(0, 225, 255));
+        animation: fadeDropShadow 3s infinite alternate;
+    }
+
+    .buttonDownload {
+        display:block;
+        left: 7.5vw;
+        top: -9vw;
+    }
+
+    .free {
+        padding: 1.2vw;
+        position: relative;
+        left: 9vw;
+        font-size: 0.9vw;
+        margin-right: 12vw;
+        border-radius: 1vw;
+        border: 0.2vw solid rgba(0, 225, 255, 1);
+        filter: drop-shadow(0 0 0.3vw rgb(0, 138, 156));
+    }
+
+    .free:hover {
+        border: 0.2vw solid rgb(255, 255, 255);
+        filter: drop-shadow(0 0 0.2vw rgb(255, 255, 255));
+    }
+
+    .premium {
+        font-size: 0.9vw;
+        padding: 1.2vw ;
+        border-radius: 1vw;
+    }
+
+    @keyframes fadeDropShadow {
+        0% {
+            filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 1));
+        }
+        75% {
+            filter: drop-shadow(0 0 1vw rgba(0, 225, 255, 0));
+        }
+    }
+
 }

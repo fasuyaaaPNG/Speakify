@@ -3,7 +3,7 @@ import './styles.css';
 import { VscArrowDown, VscDashboard, VscDebug } from 'react-icons/vsc';
 import React, { useEffect, useState } from 'react';
 import { FaLanguage, FaChartLine, FaSteam, FaTwitter,FaWrench, FaWindows, FaDownload, FaLinux, FaApple, FaAnglesUp, FaGithub, FaInstagram, FaTiktok, FaCaretRight, FaCaretLeft, FaCaretDown} from "react-icons/fa6";
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 
