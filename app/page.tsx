@@ -6,11 +6,6 @@ import { FaLanguage, FaChartLine, FaSteam, FaTwitter,FaWrench, FaWindows, FaDown
 import { motion } from 'framer-motion';
 
 export default function Home() {
-  const [isLaptop, setIsLaptop]= useState(false);
-
-  const pc = () => {
-    setIsLaptop(!isLaptop);
-  }
 
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpenJ1, setIsOpenJ1] = useState(false);
