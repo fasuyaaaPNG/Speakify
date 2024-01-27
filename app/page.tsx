@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
 
+  const isBrowser = typeof window !== 'undefined';
+
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpenJ1, setIsOpenJ1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -169,8 +171,8 @@ export default function Home() {
           <div className="boxFitur">
             <motion.div
               transition={{ duration: 0.4, ease: 'easeIn'}}
-              whileHover={{ scale: window.innerWidth >= 1024 ? 1 : 1.1 }}
-              whileTap={{ scale: window.innerWidth >= 1024 ? 1 : 0.9}}
+              whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 1.1 }}
+              whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 0.9}}
             >
               <div className="fitur fitur1">
                 <p className="judulFitur">
@@ -189,8 +191,8 @@ export default function Home() {
             </motion.div>
             <motion.div
               transition={{ duration: 0.4}}
-              whileHover={{ scale: window.innerWidth >= 1024 ? 1 : 1.1 }}
-              whileTap={{ scale: window.innerWidth >= 1024 ? 1 : 0.9}}
+              whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 1.1 }}
+              whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 0.9}}
             >
               <div className="fitur fitur2">
                 <p className="judulFitur">
@@ -214,7 +216,7 @@ export default function Home() {
       <motion.div
           className="garisAtas"
           initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))', borderRadius: '0 0 0 0'}}
-          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 2vw 6vw rgba(255, 255, 255, 1))', borderRadius: window.innerWidth >= 1024 ? '0 0 2vw 2vw' : '0 0 15vw 15vw'}}
+          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 2vw 6vw rgba(255, 255, 255, 1))', borderRadius: isBrowser && window.innerWidth >= 1024 ? '0 0 2vw 2vw' : '0 0 15vw 15vw'}}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <hr className='garisAtas' />
@@ -242,7 +244,7 @@ export default function Home() {
                 <div className="head">
                   <div className="iconContent3">
                     <span className="debugIcon">
-                      <VscDebug size={window.innerWidth >= 1024 ? 30 :23}/>
+                      <VscDebug size={isBrowser&&window.innerWidth >= 1024 ? 30 :23}/>
                     </span>
                   </div>
                   <div className="judulIsiContent3">
@@ -268,7 +270,7 @@ export default function Home() {
                 <div className="head">
                     <div className="iconContent3">
                       <span className="debugIcon">
-                        <VscDashboard size={window.innerWidth >= 1024 ? 30 :23}/>
+                        <VscDashboard size={isBrowser&&window.innerWidth >= 1024 ? 30 :23}/>
                       </span>
                     </div>
                   <div className="judulIsiContent3">
@@ -294,7 +296,7 @@ export default function Home() {
                 <div className="head">
                     <div className="iconContent3">
                       <span className="debugIcon">
-                        <FaLanguage size={window.innerWidth >= 1024 ? 30 :23}/>
+                        <FaLanguage size={isBrowser&&window.innerWidth >= 1024 ? 30 :23}/>
                       </span>
                     </div>
                   <div className="judulIsiContent3 natural">
@@ -320,7 +322,7 @@ export default function Home() {
                 <div className="head head4">
                     <div className="iconContent3">
                       <span className="debugIcon">
-                        <FaChartLine size={window.innerWidth >= 1024 ? 30 :23}/>
+                        <FaChartLine size={isBrowser&&window.innerWidth >= 1024 ? 30 :23}/>
                       </span>
                     </div>
                   <div className="judulIsiContent3">
@@ -346,7 +348,7 @@ export default function Home() {
                 <div className="head head5">
                     <div className="iconContent3">
                       <span className="debugIcon">
-                        <FaWrench size={window.innerWidth >= 1024 ? 30 :23}/>
+                        <FaWrench size={isBrowser&&window.innerWidth >= 1024 ? 30 :23}/>
                       </span>
                     </div>
                   <div className="judulIsiContent3">
