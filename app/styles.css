@@ -613,23 +613,23 @@ html {
 
     /* select version */
     .Select {
-        font-size: 4vw;
+        font-size: 3vw;
         text-align: left;
         width: 30vw;
-        margin-left: 2.5vw;
+        margin-left: 5vw;
         position: relative;
         top: 3.8vw
     }
 
     .ketVersi {
-        font-size: 1.6vw;
+        font-size: 1.2vw;
         text-align: left;
-        margin-left: 3vw;
+        margin-left: 5vw;
         padding-top: 1vw;
         padding-bottom: 0vw;
         position: relative;
         top: 4vw;
-        width: 30vw;
+        width: 20vw;
     }
 
     .fitur {
@@ -644,7 +644,7 @@ html {
         transition: opacity 1s ease-in-out; 
         position: relative;
         bottom: 20vw;
-        left: 40vw;
+        left: 35vw;
     }
 
     .judulFitur {
