@@ -839,7 +839,7 @@ html {
     }
 
     .judulContent5 {
-        font-size: 1.5vw;
+        font-size: 2vw;
         padding-bottom: 1vw;
         padding-top: 0vw;
     }
@@ -861,6 +861,7 @@ html {
         display: flex;
         justify-content: space-between;
         margin: auto;
+        padding-top: 5vw;
     }
 
     .Card {
