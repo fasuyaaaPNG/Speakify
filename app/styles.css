@@ -616,15 +616,15 @@ html {
         font-size: 4vw;
         text-align: left;
         width: 30vw;
-        margin-left: 4vw;
+        margin-left: 2.5vw;
         position: relative;
-        top: 3.8vw;
+        top: 3.8vw
     }
 
     .ketVersi {
         font-size: 1.6vw;
         text-align: left;
-        margin-right: 66vw;
+        margin-left: 3vw;
         padding-top: 1vw;
         padding-bottom: 0vw;
         position: relative;

@@ -236,7 +236,7 @@ export default function Home() {
           <div className="Content3">
             <motion.div
               className='boxContent3 box1'
-              initial={{ opacity: 0, x: 100 }}  
+              initial={{ opacity: 0, x: isBrowser && window.innerWidth >= 1024 ? -100 : 100 }}  
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: 'easeIn', duration: 0.5 }}
             >
@@ -288,8 +288,8 @@ export default function Home() {
             </motion.div>
             <motion.div
               className='boxContent3 box3'
-              initial={{ opacity: 0, x: 100 }}  
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: isBrowser && window.innerWidth >= 1024 ? 0 : 100, y: isBrowser && window.innerWidth >= 1024 ? 100 : 0 }}  
+              whileInView={{ opacity: 1, x: 0, y: 0}}
               transition={{ ease: 'easeIn', duration: 0.5}}
             >
               <div className="isiContent3">
@@ -314,7 +314,7 @@ export default function Home() {
             </motion.div>
             <motion.div
               className='boxContent3 box4'
-              initial={{ opacity: 0, x: -100 }}  
+              initial={{ opacity: 0, x: isBrowser && window.innerWidth >= 1024 ? 100 : -100 }}  
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: 'easeIn', duration: 0.5}}
             >
