@@ -786,6 +786,189 @@ html {
         height: 40vw;
     }
 
+    .Select2 {
+        font-size: 2vw;
+    }
+
+    .ketVersi2 {
+        font-size: 1.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .downloadBox {
+        width: 15vw;
+        height: 20vw;
+    }
+
+    .downloadBox:hover {
+        box-shadow: 0 0 2vw rgb(253, 253, 253);
+        transition: all 0.2s ease-in;
+    }
+
+    .downloadBoxMotion {
+        height: 20.2vw;
+        border-radius: 2vw;
+    }
+
+    .boxDownload {
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin: auto;
+        margin-bottom: 22vw;
+    }
+
+    .judulBox {
+        font-size: 1.5vw;
+    }
+
+    .downloadButton {
+        font-size: 1vw;
+        width: 10vw;
+        padding: 0.6vw;
+    }
+    
+    .logoBox {
+        padding-top: 4vw;
+    }
+
+    .judulContent5 {
+        font-size: 1.5vw;
+        padding-bottom: 1vw;
+        padding-top: 0vw;
+    }
+
+    .ketContent5 {
+        font-size: 1.2vw;
+    }
+
+    .back5 {
+        background-color: #ffffff;
+        height: 80vh;
+        text-align: center;
+        color: #4A4A4A;
+    }
+    
+    .profilCard {
+        padding-top: 3vw;
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .Card {
+        border: 0.3vw solid rgb(0, 96, 109);
+        padding: 3vw;
+        width: 20vw;
+        margin-right: 2.2vw;
+        margin-left: 1.4vw;
+        border-radius: 6vw;
+    }
+
+    .IconCard {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .iconCard {
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    .nama {
+        font-size: 1vw;
+    }
+
+    .job {
+        font-size: 0.9vw;
+        margin-bottom: 3vw;
+    }
+     
+    .profilImage {
+        width: 10vw;
+        border: 0.2vw solid rgb(0, 96, 109);
+        padding: 0.6vw;
+        border-radius: 70%;
+        margin-bottom: 2vw;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .judulContent6 {
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    
+    .content6 {
+        margin-top: 15vw;
+    }
+    
+    .sectionFaq {
+        margin-top: 10vw;
+        padding: 3vw;
+        width: 50vw;
+        margin-left: 9vw;
+    }
+    
+    .deskContent6 {
+        font-size: 2vw;
+        margin-top: 2vw;
+        width: 30vw;
+    }
+
+    .atasContent6 {
+        width: max-content;
+        position: absolute;
+        right: 7vw;
+        text-align: right;
+        margin-top: 9vw;
+    }
+
+    .boxFaq {
+        border: 0.2vw solid rgba(0, 225, 255, 1);
+        border-radius: 2vw;
+        display: flex;
+        margin-bottom: 2vw;
+        font-size: 1.6vw;
+        padding: 1.5vw;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .jawabanBoxFaq {
+        font-size: 1vw;
+        text-align: left;
+        filter: drop-shadow(0 0 0.2vw rgb(255, 255, 255));
+        padding: 2vw;
+        margin-bottom: 1vw;
+        border-radius: 2vw;
+        white-space: normal;
+    }
+
+    .footer {
+        margin-top: 7vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imageFooter {
+        width: 10vw;
+        position: relative;
+        left: 85vw;
+
+    }
+    
+    .copy {
+        margin-left: 33vw;
+        font-size: 1vw;
+    }
+
     @media screen and (width: 1366px){
         .testiCode {
             top: 133vw;

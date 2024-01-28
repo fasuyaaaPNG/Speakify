@@ -168,17 +168,18 @@ export default function Home() {
           <p className="ketVersi">
             Choose according to your preferences what you need
           </p>
-          <div className="boxFitur">
+          <div className="boxFitur" tabIndex={-1}>
             <motion.div
+              tabIndex={-1}
               transition={{ duration: 0.4, ease: 'easeIn'}}
               whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 1.1 }}
               whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 0.9}}
             >
-              <div className="fitur fitur1">
+              <div className="fitur fitur1" tabIndex={-1}>
                 <p className="judulFitur">
                   Free
                 </p>
-                <p className="isiFitur">
+                <p className="isiFitur" tabIndex={-1}>
                   ✔️ Voice assistant <br />
                   ✔️ Uses GPT-3.5 Turbo <br />
                   ✖️ Change Japanese voice <br />
@@ -190,11 +191,12 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div
+              tabIndex={-1}
               transition={{ duration: 0.4}}
               whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 1.1 }}
               whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 0.9}}
             >
-              <div className="fitur fitur2">
+              <div className="fitur fitur2" tabIndex={-1}>
                 <p className="judulFitur">
                   Premium
                 </p>
@@ -367,6 +369,7 @@ export default function Home() {
           </div>
           <div className="testiCode">
             <motion.div
+              tabIndex={-1}
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1}}
               transition={{ ease: 'easeIn', duration: 0.4}}
@@ -389,78 +392,83 @@ export default function Home() {
           <h1 className='Select2'>
             Download Free Version
           </h1>
-          <p className="ketVersi">
+          <p className="ketVersi2">
             Choose according to the platform you use below
           </p>
-          <motion.div
-            initial = {{opacity: 0, scale: 0.9}}
-            transition={{ease: 'easeIn', duration: .4}}
-            whileInView={{opacity: 1, scale: 1}}
-            whileTap={{scale: 0.9}}
-            whileHover={{scale: 1.1}}
-          >
-            <div className="downloadBox">
-              <div className="logoBox">
-                <FaWindows size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+          <div className="boxDownload">
+            <motion.div
+              className='downloadBoxMotion'
+              initial = {{opacity: 0, scale: 0.9}}
+              transition={{ease: 'easeIn', duration: .4}}
+              whileInView={{opacity: 1, scale: 1}}
+              whileTap={{scale: 0.9}}
+              whileHover={{scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 1.1}}
+            >
+              <div className="downloadBox">
+                <div className="logoBox">
+                  <FaWindows size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+                </div>
+                <p className="judulBox">
+                  Windows
+                </p>
+                <div className="button">
+                  <button className='downloadButton'>
+                    Download <FaDownload color='white'/>
+                  </button>
+                </div>
               </div>
-              <p className="judulBox">
-                Windows
-              </p>
-              <div className="button">
-                <button className='downloadButton'>
-                  Download <FaDownload color='white'/>
-                </button>
+            </motion.div>
+            <motion.div
+              className='downloadBoxMotion'
+              initial = {{opacity: 0, scale: 0.9}}
+              transition={{ease: 'easeIn', duration: .4}}
+              whileInView={{opacity: 1, scale: 1}}
+              whileTap={{scale: 0.9}}
+              whileHover={{scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 1.1}}
+            >
+              <div className="downloadBox">
+                <div className="logoBox">
+                  <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+                </div>
+                <p className="judulBox">
+                  Linux
+                </p>
+                <div className="button">
+                  <button className='downloadButton'>
+                    Download <FaDownload color='white'/>
+                  </button>
+                </div>
               </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial = {{opacity: 0, scale: 0.9}}
-            transition={{ease: 'easeIn', duration: .4}}
-            whileInView={{opacity: 1, scale: 1}}
-            whileTap={{scale: 0.9}}
-            whileHover={{scale: 1.1}}
-          >
-            <div className="downloadBox">
-              <div className="logoBox">
-                <FaLinux size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+            </motion.div>
+            <motion.div
+              className='downloadBoxMotion'
+              initial = {{opacity: 0, scale: 0.9}}
+              transition={{ease: 'easeIn', duration: .4}}
+              whileInView={{opacity: 1, scale: 1}}
+              whileTap={{scale: 0.9}}
+              whileHover={{scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 1.1}}
+            >
+              <div className="downloadBox">
+                <div className="logoBox">
+                  <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
+                </div>
+                <p className="judulBox">
+                  Mac OS
+                </p>
+                <div className="button">
+                  <button className='downloadButton'>
+                    Download <FaDownload color='white'/>
+                  </button>
+                </div>
               </div>
-              <p className="judulBox">
-                Linux
-              </p>
-              <div className="button">
-                <button className='downloadButton'>
-                  Download <FaDownload color='white'/>
-                </button>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial = {{opacity: 0, scale: 0.9}}
-            transition={{ease: 'easeIn', duration: .4}}
-            whileInView={{opacity: 1, scale: 1}}
-            whileTap={{scale: 0.9}}
-            whileHover={{scale: 1.1}}
-          >
-            <div className="downloadBox">
-              <div className="logoBox">
-                <FaApple size={35} filter='drop-shadow(0 0 1vw rgba(0, 225, 255, 1)'/>
-              </div>
-              <p className="judulBox">
-                Mac OS
-              </p>
-              <div className="button">
-                <button className='downloadButton'>
-                  Download <FaDownload color='white'/>
-                </button>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
         <br /><br /><br />
         <motion.div
           className="garis1"
           initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))', borderRadius: '0 0 0 0'}}
-          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))', borderRadius: '15vw 15vw 0 0'}}
+          whileInView={{ width: '100%', opacity: 1, filter: isBrowser && window.innerWidth >= 1024 ? 'drop-shadow(0 -2vw 2vw rgba(255, 255, 255, 1))' : 'drop-shadow(0 -2vw 2vw rgba(255, 255, 255, 1))', borderRadius: isBrowser && window.innerWidth >= 1024 ? '2vw 2vw 0 0' : '15vw 15vw 0 0'}}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <hr className='garis1' />
@@ -474,7 +482,7 @@ export default function Home() {
               The following contributed to this project
             </p>
             <motion.div
-              animate={{transform: `translateX(${transformX}vw)`}}
+              animate={{transform: isBrowser && window.innerWidth >= 1024 ? `0` : `translateX(${transformX}vw)`}}
             >
               <div className="profilCard">
                 <motion.div
@@ -559,6 +567,7 @@ export default function Home() {
                       </div>
                       <div className="iconCard">
                         <motion.div
+                          initial={{filter: 'drop-shadow(0 0 0vw rgb(0, 0, 0))'}}
                           whileTap={{filter: 'drop-shadow(0 0 1vw rgb(0, 225, 255))'}}
                         >
                           <a href="https://www.instagram.com/dhirasyv?igsh=dWkxcW1wcTJ3Zjd3" className="iconLink">
@@ -665,7 +674,7 @@ export default function Home() {
         <motion.div
           className="garis1"
           initial={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 0vw 0vw rgba(255, 255, 255, 0))', borderRadius: '0 0 0 0'}}
-          whileInView={{ width: '100%', opacity: 1, filter: 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))', borderRadius: '0 0 15vw 15vw'}}
+          whileInView={{ width: '100%', opacity: 1, filter: isBrowser && window.innerWidth >= 1024 ? 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))' : 'drop-shadow(0 -2vw 6vw rgba(255, 255, 255, 1))', borderRadius: isBrowser && window.innerWidth >= 1024 ? '0 0 5vw 5vw' : '0 0 15vw 15vw'}}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <hr className='garis1' />
@@ -673,15 +682,17 @@ export default function Home() {
         {/* end back 5 */}
         <div className="back6">
           <div className="content6">
-            <div className="judulContent6">
-              <p className="textJudulContent6">
-                FAQ
-              </p>
-            </div>
-            <div className="deskContent6">
-              <p className="textDeskContent6">
-                Things you might ask about this project
-              </p>
+            <div className="atasContent6">
+              <div className="judulContent6">
+                <p className="textJudulContent6">
+                  FAQ
+                </p>
+              </div>
+              <div className="deskContent6">
+                <p className="textDeskContent6">
+                  Things you might ask about this project
+                </p>
+              </div>
             </div>
             <div className="sectionFaq">
               <motion.div
