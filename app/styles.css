@@ -69,7 +69,7 @@ html {
 }
 
 .desk {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 200;
     width: 75vw;
     margin-left: auto;
@@ -351,6 +351,12 @@ html {
 
 .Select2 {
     font-size: 6vw;
+    margin-bottom: 2vw;
+}
+
+.ketVersi2 {
+    font-size: 3vw;
+    margin-bottom: 12vw;
 }
 
 .atas {
