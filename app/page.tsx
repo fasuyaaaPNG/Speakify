@@ -235,12 +235,12 @@ export default function Home() {
           </motion.div>
           <div className="Content3">
             <motion.div
-              className='boxContent3'
+              className='boxContent3 box1'
               initial={{ opacity: 0, x: 100 }}  
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: 'easeIn', duration: 0.5 }}
             >
-              <div className="isiContent3">
+              <div className="isiContent3 box1">
                 <div className="head">
                   <div className="iconContent3">
                     <span className="debugIcon">
@@ -370,8 +370,8 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1}}
               transition={{ ease: 'easeIn', duration: 0.4}}
-              whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 1.1}}
-              whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 0.8 : 0.9 }}
+              whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 1 : 1.1}}
+              whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 0.9 }}
             >
               <img className='testi' src="/misc/image.svg" alt="" />
             </motion.div>
@@ -380,7 +380,7 @@ export default function Home() {
         <motion.div
           className="garis"
           initial={{ width: '0%', opacity: 0, left: '50%', right: '50%' }}
-          whileInView={{ width: '70%', opacity: 1, left: 0, right: 0 }}
+          whileInView={{ width: isBrowser && window.innerWidth >= 1024 ? '90%' : '70%', opacity: 1, left: 0, right: 0 }}
           transition={{ duration: 0.4 }}
         >
           <hr className='garis' />

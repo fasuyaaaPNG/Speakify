@@ -672,12 +672,11 @@ html {
     }
 
     .atas {
-        top: 40vw;
-        width: 4vw;
-        height: 4vw;
-        justify-content: center;
-        align-items: center;
-        left: 5vw;
+        left: 4vw;
+        position: fixed;
+        top: 85vh;
+        width: 5vw;
+        height: 5vw;
     }
 
     .back2 {
@@ -693,8 +692,80 @@ html {
     }
 
     .judulContent3 {
-        margin-top: 12vw;
         font-size: 2vw;
+        position: relative;
+        top: -5vw;
+        margin-bottom: 2vw;
+    }
+
+    .judulIsiContent3 {
+        font-size: 1.2vw;
+        margin-bottom: 1vw;
+        align-items: center;
+    }
+
+    .debugIcon {
+        height: max-content;
+        margin-right: -2vw;
+    }
+    
+    .iconContent3 {
+        height: max-content;
+    }
+
+    .deskripsiIsiContent3 {
+        font-size: 0.8vw;
+        width: 25vw;
+        padding-top: 1vw;
+    }
+
+    .isiContent3 {
+        margin-bottom: 2vw;
+        width: max-content;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+    }
+
+    .box1 {
+        top: 1vh;
+        position: relative;
+    }
+
+    .box2 {
+        left: 2vw;
+        position: relative;
+        top: 4vw;
+    }
+
+    .box3 {
+        position: relative;
+        left: 30vw;
+        top: 2vw;
+    }
+
+    .box4 {
+        position: relative;
+        left: 59vw;
+        bottom: 29vw;
+    }
+
+    .box5 {
+        position: relative;
+        left: 58vw;
+        bottom: 27vw;
+    }
+
+    .head4 {
+        position: relative;
+        left: 15vw;
+    }
+
+    .head5 {
+        position: relative;
+        left: 10vw;
     }
 
     .testi {
@@ -703,74 +774,55 @@ html {
 
     .testiCode {
         position: absolute;
-        left: 50%; 
-        transform: translateX(-50%); 
-        top: 127vw;
-    }
-      
-
-    .iconContent3 {
-        height: 2.5vw;
-        align-items: center;
-        margin-right: 1vw;
+        top: 123vw;
+        right: 36vw;
     }
 
-    .head {
-        display: flex;
-        align-items: center;
-        width: max-content;
+    .testiCode:hover {
+        filter: none;
     }
 
-    .judulIsiContent3 {
-        font-size: 1vw;
-        width: max-content;
+    .Content3 {
+        height: 40vw;
     }
 
-    .deskripsiIsiContent3 {
-        font-size: 0.8vw;
-        width: 25vw;
-        margin-bottom: 1vw;
-        padding-top: 1vw;
+    @media screen and (width: 1366px){
+        .testiCode {
+            top: 133vw;
+        }
     }
 
-    .isiContent3 {
-        margin-bottom: 3vw;
+    @media screen and (width: 1920px){
+        .testiCode {
+            top: 133vw;
+        }
     }
 
-    .box2 {
-        position: relative;
-        left: 3vw;
+    @media screen and (width: 1024px){
+        .box4 {
+            position: relative;
+            left: 61vw;
+            bottom: 31vw;
+        }
+    
+        .box5 {
+            position: relative;
+            left: 58vw;
+            bottom: 29vw;
+        }
+    
+        .head4 {
+            position: relative;
+            left: 14vw;
+        }
+    
+        .head5 {
+            position: relative;
+            left: 9vw;
+        }
+
+        .testiCode {
+            top: 140vw;
+        }
     }
-
-    .box3 {
-        position: relative;
-        left: 30vw;
-        margin-top: -2vw;
-    }
-
-    .box4 {
-
-        position: absolute;
-        left: 67vw;
-        top: 136vw;
-    }
-
-    .head4 {
-        position: relative;
-        left: 15.6vw;
-    }
-
-    .box5 {
-
-        position: absolute;
-        left: 65vw;
-        top: 148vw;
-    }
-
-
-    .head5 {
-        position: relative;
-        left: 11.6vw;
-    }
-
 }
