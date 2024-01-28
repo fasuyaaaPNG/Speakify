@@ -370,8 +370,8 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1}}
               transition={{ ease: 'easeIn', duration: 0.4}}
-              whileHover={{ scale: 1.1}}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: isBrowser && window.innerWidth >= 1024 ? 0.9 : 1.1}}
+              whileTap={{ scale: isBrowser && window.innerWidth >= 1024 ? 0.8 : 0.9 }}
             >
               <img className='testi' src="/misc/image.svg" alt="" />
             </motion.div>

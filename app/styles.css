@@ -698,14 +698,14 @@ html {
     }
 
     .testi {
-        width: 25vw;
+        width: 28vw;
     }
 
     .testiCode {
         position: absolute;
         left: 50%; 
         transform: translateX(-50%); 
-        top: 120vw;
+        top: 127vw;
     }
       
 
@@ -752,7 +752,7 @@ html {
 
         position: absolute;
         left: 67vw;
-        top: 128vw;
+        top: 136vw;
     }
 
     .head4 {
@@ -764,7 +764,7 @@ html {
 
         position: absolute;
         left: 65vw;
-        top: 140vw;
+        top: 148vw;
     }
 
 
