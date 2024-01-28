@@ -498,7 +498,7 @@ export default function Home() {
                       Dhavin Fasya A.
                     </p>
                     <p className="job">
-                      Software Development
+                      Software Developer
                     </p>
                     <div className="IconCard">
                       <div className="iconCard">
