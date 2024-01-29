@@ -850,7 +850,7 @@ html {
 
     .back5 {
         background-color: #ffffff;
-        height: 80vh;
+        height: 89vh;
         text-align: center;
         color: #4A4A4A;
     }
@@ -861,7 +861,8 @@ html {
         display: flex;
         justify-content: space-between;
         margin: auto;
-        padding-top: 5vw;
+        padding-top: 5vw;   
+        margin-bottom: 4vw;
     }
 
     .Card {
