@@ -977,19 +977,19 @@ html {
         font-size: 1vw;
     }
 
-    @media screen and (width: 1366px){
+    @media screen and (min-width: 1025px) and (max-width: 1366px) {
+        .testiCode {
+            top: 128.5vw;
+        }
+    }
+
+    @media screen and (min-width: 1367px) and (max-width: 1920px) {
         .testiCode {
             top: 133vw;
         }
     }
 
-    @media screen and (width: 1920px){
-        .testiCode {
-            top: 133vw;
-        }
-    }
-
-    @media screen and (width: 1024px){
+    @media screen and (min-width: 480px) and (max-width: 1024px) {
         .box4 {
             position: relative;
             left: 61vw;

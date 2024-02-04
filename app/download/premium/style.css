@@ -1,0 +1,72 @@
+/* style main div */
+.main {
+    background-color: #101010;;
+    height: 100vh;
+}
+
+/* style div logo */
+.logoImagePlus {
+    width: 30vw;
+    height: 30vw;
+}
+
+.logo{
+    width: max-content;
+    height: 30vw;
+    position: relative;
+    right: 7vw;
+    bottom: 4vw;
+}
+
+/* style div container */
+.container {
+    border: 1px solid red;
+    text-align: center;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    height: 90vh;
+    border-radius: 5vw;
+    padding: 3vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* style div judul */
+.judul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+}
+
+.judulText {
+    font-size: 7vw;
+    margin: auto;
+    font-weight: 200;
+}
+
+/* style div form */
+.formIsiNamaInput, .formIsiEmailInput {
+    width: 70vw;
+    border-radius: 1vw;
+    border: 0vw solid rgb(0, 191, 255);
+}
+
+.formIsiBuktiInput {
+    border: 1px solid red;
+    width: 70vw;
+    border-radius: 1vw;
+}
+
+.formIsiBuktiInput::file-selector-button {
+    background-color: #101010;
+    border: thin solid rgb(0, 191, 255);
+    border-radius: 1vw;
+    font-size: 3vw;
+}
+
+.formIsiBuktiInput:focus {
+    background-color: rgb(0, 191, 255);
+}
