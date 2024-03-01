@@ -36,6 +36,9 @@ export default function Premium() {
                                 <input type="file" className="formIsiBuktiInput" accept='.jpg,.png,.jpeg' />
                             </div>
                         </div>  
+                        <button className='Button'>
+                            Submit
+                        </button>
                     </form>
                 </div>
                 {/* form-------- */}
