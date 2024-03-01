@@ -27,10 +27,10 @@ export default function Premium() {
                         {/* div formIsi */}
                         <div className="formIsi">
                             <div className="formIsiNama">
-                                <input type="text" className="formIsiNamaInput" />
+                                <input type="text" placeholder='Name' className="formIsiNamaInput" />
                             </div>
                             <div className="formIsiEmail">
-                                <input type="email" className="formIsiEmailInput" />
+                                <input type="email" placeholder='Email' className="formIsiEmailInput" />
                             </div>
                             <div className="formIsiBukti">
                                 <input type="file" className="formIsiBuktiInput" accept='.jpg,.png,.jpeg' />
