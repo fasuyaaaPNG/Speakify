@@ -151,7 +151,9 @@ export default function Home() {
             <a className='free' href='#download'>
               DOWNLOAD FOR FREE
             </a>
-            <button className="premium">DOWNLOAD FOR PREMIUM</button>
+            <a className='premium' href='/download/premium'>
+              DOWNLOAD FOR PREMIUM
+            </a>
           </div>
         </div>
         <div className="arrow">
