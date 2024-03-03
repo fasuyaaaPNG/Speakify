@@ -26,12 +26,22 @@ export default function Premium() {
                     <form action="">
                         {/* div formIsi */}
                         <div className="formIsi">
+                            <fieldset>
+                                <legend>
+                                    Name
+                                </legend>
                             <div className="formIsiNama">
-                                <input type="text" placeholder='Name' className="formIsiNamaInput" />
+                                <input type="text" className="formIsiNamaInput" />
                             </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    Email
+                                </legend>
                             <div className="formIsiEmail">
-                                <input type="email" placeholder='Email' className="formIsiEmailInput" />
+                                <input type="email" className="formIsiEmailInput" />
                             </div>
+                            </fieldset>
                             <div className="formIsiBukti">
                                 <input type="file" className="formIsiBuktiInput" accept='.jpg,.png,.jpeg' />
                             </div>
@@ -40,6 +50,11 @@ export default function Premium() {
                             Submit
                         </button>
                     </form>
+                    <p className="howTo">
+                        <button>
+                            how to pay it?
+                        </button>
+                    </p>
                 </div>
                 {/* form-------- */}
             </div>

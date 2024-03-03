@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* style main div */
 .main {
     background-color: #101010;;
@@ -43,8 +47,8 @@
 .judulText {
     font-size: 7vw;
     margin: auto;
-    font-weight: 200;
-    margin-bottom: 3vw;
+    font-weight: 600;
+    margin-bottom: 7vw;
 }
 
 /* style div form */
@@ -62,6 +66,7 @@
 .formIsiBuktiInput {
     width: 70vw;
     border-radius: 1vw;
+    margin-top: 2vw;
 }
 
 .Button {
@@ -77,7 +82,7 @@
 .formIsiBuktiInput::file-selector-button {
     background-color: #101010;
     border: thin solid rgb(0, 191, 255);
-    border-radius: 1vw;
+    border-radius: 2vw;
     font-size: 3vw;
     color: white;
     padding: 2vw;
@@ -86,4 +91,39 @@
 
 .formIsiBuktiInput:focus {
     background-color: rgb(0, 191, 255);
+}
+
+fieldset {
+    border-radius: 3vw;
+    width: 8vw;
+    margin: auto;
+    height: 15vw;
+    margin-bottom: 3vw;
+}
+
+legend {
+    text-align: left;
+    margin-left: 5vw;
+    font-size: 3.5vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.formIsiNamaInput,.formIsiEmailInput {
+    border: none;
+    position: relative;
+    top: 0vw;
+    outline: none;
+    font-size: 4vw;
+}
+
+.howTo {
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
