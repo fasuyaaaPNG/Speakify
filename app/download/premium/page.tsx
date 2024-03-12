@@ -8,11 +8,13 @@ export default function Premium() {
             {/* container */}
             <div className="container">
                 {/* div logo */}
-                <div className="logo">
-                    <div className="logoImage">
-                        <img src="/logo/logoPlus.svg" alt="" className="logoImagePlus" />
+                <a href="/">
+                    <div className="logo">
+                        <div className="logoImage">
+                            <img src="/logo/logoPlus.svg" alt="" className="logoImagePlus" />
+                        </div>
                     </div>
-                </div>
+                </a>
                 {/* logo-------- */}
                 {/* div judul */}
                 <div className="judul">
@@ -50,13 +52,27 @@ export default function Premium() {
                             Submit
                         </button>
                     </form>
-                    <p className="howTo">
-                        <button>
-                            how to pay it?
-                        </button>
-                    </p>
                 </div>
                 {/* form-------- */}
+                <div className="info">
+                    <p className="how">
+                        Payment
+                    </p>
+                    <p className="subHow">
+                        Payment method uses bank transfer
+                    </p>
+                    <div className="borderBank">
+                        <p className="bank">
+                            <span className='name'>Bank name:</span> Bank Seabank (Seabank)
+                        </p>
+                        <p className="bank">
+                            <span className='name'>Account number:</span> 984128120128
+                        </p>
+                        <p className="bank">
+                            <span className='name'>Name:</span> Dhira Faizah Syavitri
+                        </p>
+                    </div>
+                </div>
             </div>
             {/* container------- */}
         </div>
