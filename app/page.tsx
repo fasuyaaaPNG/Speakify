@@ -414,7 +414,7 @@ export default function Home() {
                   Windows
                 </p>
                 <div className="button">
-                  <a href="speakify.zip" className='downloadButton' download>
+                  <a href="/speakify.zip" className='downloadButton' download>
                     Download <FaDownload color='white'/>
                   </a>
                 </div>
@@ -436,7 +436,7 @@ export default function Home() {
                   Linux
                 </p>
                 <div className="button">
-                  <a href="speakify.tar" className='downloadButton' download>
+                  <a href="/speakify.tar" className='downloadButton' download>
                     Download <FaDownload color='white'/>
                   </a>
                 </div>
@@ -458,7 +458,7 @@ export default function Home() {
                   Mac OS
                 </p>
                 <div className="button">
-                  <a href="speakify.7z" className='downloadButton' download>
+                  <a href="/speakify.7z" className='downloadButton' download>
                     Download <FaDownload color='white'/>
                   </a>
                 </div>
