@@ -71,6 +71,9 @@ export default function Premium() {
                         <p className="bank">
                             <span className='name'>Name:</span> Dhira Faizah Syavitri
                         </p>
+                        <p className="bank">
+                            <span className='name'>Price:</span> $25.28
+                        </p>
                     </div>
                 </div>
             </div>
